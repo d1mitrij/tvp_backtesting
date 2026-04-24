@@ -1,0 +1,3698 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INDICATORS_OVERVIEW.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="indicators-overview--mdb-impact-measurement-frameworks">Indicators Overview — MDB Impact Measurement Frameworks</h1>
+<p><strong>Frameworks covered:</strong> EBRD · IFC/AIMM · FAST-Infra · ADB · AIIB · IDB · IsDB · NDB · AfDB · HIPSO</p>
+<blockquote>
+<p><strong>How to read this document:</strong> Each section describes one MDB's measurement framework — how it scores projects, what it measures, and which specific indicators it uses. A cross-framework comparison table at the end shows how the same themes (climate, jobs, gender, water, private capital) are measured differently across institutions.</p>
+</blockquote>
+<hr>
+<h2 id="1-ebrd--assessment-of-transition-qualities-atq--toms">1. EBRD — Assessment of Transition Qualities (ATQ) / TOMS</h2>
+<p><strong>Full framework name:</strong> Transition Objectives Measurement System / Transition Impact Monitoring System (TOMS/TIMS)
+<strong>Country-level scoring:</strong> ATQ scores (1–10 scale, where 10 = best-practice frontier)
+<strong>Project scoring:</strong> Expected Transition Impact (ETI), 0–100 (derived from ATQ gap × project intensity)</p>
+<h3 id="how-the-scoring-works">How the scoring works</h3>
+<p>The EBRD measures how far each country has advanced toward a sustainable market economy across <strong>six Transition Qualities</strong>. Each quality is scored 1–10 by normalizing raw indicators to a frontier value (set at the 98th percentile or theoretical optimum). Project ETI scores are higher when a project targets a quality where the host country is furthest behind — i.e., the ATQ gap is largest.</p>
+<h3 id="the-six-transition-qualities-and-their-indicators">The Six Transition Qualities and Their Indicators</h3>
+<p><strong>1. Competitive</strong> — Are markets open and generating value?</p>
+<table>
+<thead>
+<tr>
+<th>Sub-dimension</th>
+<th>Key Indicators (unit)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market structures</td>
+<td>Applied tariff rates (weighted avg %); SME index (1–10); competition law enforcement (1–10); new business entries (per 1,000 population); subsidies (% of GDP)</td>
+</tr>
+<tr>
+<td>Value generation</td>
+<td>Labour productivity (GDP PPP per worker); Economic Complexity Index; Logistics Performance Index (1–5); credit to private sector (% GDP); global value chain participation (%)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Well-Governed</strong> — Are institutions transparent and rule-based?</p>
+<table>
+<thead>
+<tr>
+<th>Sub-dimension</th>
+<th>Key Indicators (unit)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>National governance (75%)</td>
+<td>Regulatory quality (−2.5 to +2.5); government effectiveness (−2.5 to +2.5); Corruption Perception Index (0–100); budget transparency (0–100); press freedom index (0–100); property rights protection (1–7); informality (%)</td>
+</tr>
+<tr>
+<td>Corporate governance (25%)</td>
+<td>Board structure &amp; functioning (0–4); transparency &amp; disclosure (0–5); shareholder rights (0–4); auditing standards quality (1–7)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Green</strong> — Is the economy decarbonizing and adapting?</p>
+<table>
+<thead>
+<tr>
+<th>Sub-dimension</th>
+<th>Weight</th>
+<th>Key Indicators (unit)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mitigation — physical</td>
+<td>37%</td>
+<td>Renewable electricity share (%); industrial GVA per tCO2; MWh generated per tCO2 emitted; agriculture GVA per tGHG</td>
+</tr>
+<tr>
+<td>Mitigation — structural</td>
+<td>63%</td>
+<td>Renewable energy support policy (0–1); carbon price (0–1); fossil fuel subsidies (% GDP); just transition plan (0–1); INDC ambition rating (0–1)</td>
+</tr>
+<tr>
+<td>Adaptation — physical</td>
+<td>45%</td>
+<td>NDGAIN human habitat score; water stress index; projected cereal yield change (%); people affected by droughts/floods per 100,000</td>
+</tr>
+<tr>
+<td>Adaptation — structural</td>
+<td>55%</td>
+<td>National adaptation plans (0–1); institutional governance quality; agricultural capacity score</td>
+</tr>
+<tr>
+<td>Other environment</td>
+<td>—</td>
+<td>PM2.5 exposure (μg/m³); waste intensity (kg per US$ household expenditure); threatened species share (%)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Inclusive</strong> — Are economic benefits broadly shared?</p>
+<table>
+<thead>
+<tr>
+<th>Sub-dimension</th>
+<th>Key Indicators (unit)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Human capital (33%)</td>
+<td>Human Capital Index (0–1); labour force participation (%); gender participation gap (women/men ratio); youth NEET rate (%); ICT skills (% population ≥15)</td>
+</tr>
+<tr>
+<td>Access to finance (33%)</td>
+<td>Savings at institutions (% population ≥15); borrowing access (%); fixed broadband penetration (%); safe drinking water access (%); sanitation access (%)</td>
+</tr>
+<tr>
+<td>Policies &amp; norms (33%)</td>
+<td>Social benefit spending (% GDP); non-discrimination index (0–1); Women's Business and the Law score (0–100); gender violence rate (% female population)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. Resilient</strong> — Are the financial system and energy sector stable?</p>
+<table>
+<thead>
+<tr>
+<th>Sub-dimension</th>
+<th>Weight</th>
+<th>Key Indicators (unit)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energy sector (30%)</td>
+<td>Sector restructuring (0–0.67); private participation (0–0.67); tariff reform (0–0.67); cross-border electricity connectivity (0–0.67); regulator independence (0–0.67)</td>
+<td></td>
+</tr>
+<tr>
+<td>Banking health (35%)</td>
+<td>Capital adequacy ratio (%); non-performing loans (%); loan loss reserves (%); foreign currency loans (%); five-bank asset concentration (%)</td>
+<td></td>
+</tr>
+<tr>
+<td>Alternative financing (25%)</td>
+<td>Non-bank financial assets (% GDP); market capitalization (0–100%); IPO activity; bond market diversity (0–6.75); money market quality (0–1)</td>
+<td></td>
+</tr>
+<tr>
+<td>Regulation &amp; safety nets (10%)</td>
+<td>Deposit insurance effectiveness (1–10); bank risk management quality (1–10); supervisor independence (1–10)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>6. Integrated</strong> — Is the country connected internally and to global markets?</p>
+<table>
+<thead>
+<tr>
+<th>Sub-dimension</th>
+<th>Key Indicators (unit)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>External integration</td>
+<td>Total trade (% GDP, 5-year avg); FDI net inflows (% GDP); financial openness (Chinn-Ito index); bilateral investment agreements (#); FDI restrictiveness (0–1)</td>
+</tr>
+<tr>
+<td>Internal transport</td>
+<td>Road connectivity; logistics competence (1–5); tracking capability (1–5); shipment timeliness (1–5); product loss rate (%)</td>
+</tr>
+<tr>
+<td>Energy &amp; digital</td>
+<td>Electricity supply quality (1–7); transmission losses (%); broadband subscriptions per 100; internet users (%); 4G coverage (%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sectoral-context-drivers-of-indicator-selection">Sectoral Context (drivers of indicator selection)</h3>
+<table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Transition challenges informing ETI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energy</td>
+<td>High carbon intensity; renewable investment gap; grid modernization lag</td>
+</tr>
+<tr>
+<td>Industry</td>
+<td>Hard-to-abate emissions (steel, cement, chemicals); resource inefficiency</td>
+</tr>
+<tr>
+<td>Agrifood</td>
+<td>Climate exposure; food loss in logistics; biodiversity/food security tension</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>Lack of low-carbon urban transport; fleet emission intensity</td>
+</tr>
+<tr>
+<td>Urban/Municipal</td>
+<td>Climate resilience deficits; waste management; water stress</td>
+</tr>
+<tr>
+<td>Financial system</td>
+<td>Climate risk data scarcity; local bank capacity gaps; absence of national climate standards</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unique feature:</strong> Country ATQ gap is the multiplier — a project in a low-scoring country on a weak quality earns a higher ETI, incentivizing investment where transition impact is greatest.</p>
+<p><strong>Source documents:</strong></p>
+<ul>
+<li><code>ebrd_framework_complete/Transition-Report-2024-25-Methodological-Notes.pdf</code> — Transition Report 2024–25: Methodological Notes (ATQ Indicator Definitions and Frontier Normalization)</li>
+<li><code>ebrd_framework_complete/transition-report-2025-26-methodological-notes (1).pdf</code> — Transition Report 2025–26: Methodological Notes (ATQ Indicator Definitions and Frontier Normalization)</li>
+<li><code>ebrd_framework_complete/ebrd-impact-report-2024.pdf</code> — EBRD Impact Report 2024</li>
+</ul>
+<p>Externally aligned with <strong>HIPSO</strong>, <strong>IRIS+</strong>, <strong>UN SDGs</strong>.</p>
+<hr>
+<h2 id="2-ifc--aimm-anticipated-impact-measurement-and-monitoring">2. IFC — AIMM (Anticipated Impact Measurement and Monitoring)</h2>
+<p><strong>Framework:</strong> AIMM General Guidance Note + 20+ Sector Framework Briefs (SFBs)
+<strong>Scoring formula:</strong> <code>Total AIMM Score = (Project Outcome Score × Likelihood) + (Market Creation Score × Likelihood)</code>
+<strong>Scale:</strong> 0–100 → Excellent (86–100) / Good (51–85) / Satisfactory (31–50) / Low (0–30)</p>
+<h3 id="how-the-scoring-works">How the scoring works</h3>
+<p>Each project is scored on two dimensions:</p>
+<ol>
+<li><strong>Project Outcomes</strong> — direct benefits to people (access, quality, affordability, jobs, GHG)</li>
+<li><strong>Market Creation</strong> — systemic changes that outlast the project (market structure shifts, replication by others)</li>
+</ol>
+<p>Both dimensions are scored for intensity (Below Average → Significantly Above Average, normalized per $1M invested) and then discounted by a likelihood factor (project risk).</p>
+<h3 id="cross-sector-project-outcome-indicators">Cross-Sector Project Outcome Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access</td>
+<td>New customers reached (#); GWh of power delivered; loans disbursed (#); litres of water supplied</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>SAIFI/SAIDI power reliability; health outcomes improvement; curricula quality score</td>
+</tr>
+<tr>
+<td>Affordability</td>
+<td>Cost to end-user (US cents/kWh; interest rate spread; cost reduction %)</td>
+</tr>
+<tr>
+<td>Direct employment</td>
+<td>FTE workers created (#)</td>
+</tr>
+<tr>
+<td>Indirect / induced jobs</td>
+<td>Supply-chain and induced employment (modelled)</td>
+</tr>
+<tr>
+<td>Value added</td>
+<td>GDP contribution = wages + profits + taxes ($M)</td>
+</tr>
+<tr>
+<td>GHG emissions</td>
+<td>tCO2e avoided or reduced; carbon cost integrated into NPV</td>
+</tr>
+<tr>
+<td>ESG sustainability</td>
+<td>ESG standards adopted beyond compliance (qualitative)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="market-creation-indicators">Market Creation Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Key Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Competitiveness</td>
+<td>New market entrants (#); price convergence; innovation adoption by competitors</td>
+</tr>
+<tr>
+<td>Resilience</td>
+<td>Funding source diversification; regulatory framework improvement; climate adaptation capacity</td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>Infrastructure connectivity; local supply chain development; private capital mobilized ($M)</td>
+</tr>
+<tr>
+<td>Inclusiveness</td>
+<td>Market-wide adoption of models targeting women, BoP, rural populations</td>
+</tr>
+<tr>
+<td>Sustainability</td>
+<td>Sector-wide shift toward green standards or sustainable resource management</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Inclusion bonus:</strong> Projects targeting women, low-income, rural, or refugee populations receive an upward intensity rating adjustment.</p>
+<h3 id="sector-specific-indicators-sector-framework-briefs">Sector-Specific Indicators (Sector Framework Briefs)</h3>
+<table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Market Gap Indicators</th>
+<th>Impact Benchmarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Agribusiness</strong></td>
+<td>Smallholder market access (%); food security gap</td>
+<td>Farmers in supply chain (#); yield (t/ha); food safety certification</td>
+</tr>
+<tr>
+<td><strong>Capital Markets</strong></td>
+<td>Capital market depth (% GDP)</td>
+<td>Bond/equity issuance ($M); investor diversification</td>
+</tr>
+<tr>
+<td><strong>DARP</strong></td>
+<td>NPL ratio; distressed asset overhang</td>
+<td>Assets restructured ($M); banking sector stabilization</td>
+</tr>
+<tr>
+<td><strong>Education</strong></td>
+<td>Enrollment/completion gap; learning deficit</td>
+<td>Students reached (#); test score improvement; teachers trained</td>
+</tr>
+<tr>
+<td><strong>Health</strong></td>
+<td>Disease burden; access-to-care gap</td>
+<td>Patients served (#); health outcome improvement</td>
+</tr>
+<tr>
+<td><strong>Housing</strong></td>
+<td>Housing deficit (#units); affordability ratio</td>
+<td>Units financed (#); cost-to-income ratio reduction</td>
+</tr>
+<tr>
+<td><strong>Insurance &amp; Pension</strong></td>
+<td>Insurance penetration gap (%); pension coverage</td>
+<td>Policies written (#); beneficiaries covered (#)</td>
+</tr>
+<tr>
+<td><strong>Manufacturing</strong></td>
+<td>Productivity gap vs. frontier; resource intensity</td>
+<td>Output growth (%); energy/water intensity reduction; jobs created</td>
+</tr>
+<tr>
+<td><strong>Mining</strong></td>
+<td>Governance/ESG gap; resource revenue management</td>
+<td>Revenue transparency score; reclamation area (ha)</td>
+</tr>
+<tr>
+<td><strong>Oil &amp; Gas</strong></td>
+<td>Flaring intensity; energy access gap</td>
+<td>Flaring reduction (tCO2e); people with new energy access (#)</td>
+</tr>
+<tr>
+<td><strong>Ports</strong></td>
+<td>Throughput capacity gap; logistics costs</td>
+<td>TEU throughput; dwell time reduction (days)</td>
+</tr>
+<tr>
+<td><strong>Power</strong></td>
+<td>Electrification gap; renewable share</td>
+<td>Connections (#); GWh generated; tCO2e avoided</td>
+</tr>
+<tr>
+<td><strong>Private Equity Funds</strong></td>
+<td>PE market development gap</td>
+<td>Portfolio company growth (%); capital mobilized ($M)</td>
+</tr>
+<tr>
+<td><strong>Retail</strong></td>
+<td>Formalization gap; consumer access</td>
+<td>Outlets in underserved areas (#); jobs created</td>
+</tr>
+<tr>
+<td><strong>Roads</strong></td>
+<td>Road density gap; rural access index</td>
+<td>Km built/rehabilitated; travel time reduction (%)</td>
+</tr>
+<tr>
+<td><strong>SME Finance</strong></td>
+<td>SME credit gap ($Bn)</td>
+<td>Loans to SMEs (#/$M); active borrowers (gender-disaggregated)</td>
+</tr>
+<tr>
+<td><strong>TMT</strong></td>
+<td>Broadband penetration gap; digital skills deficit</td>
+<td>Internet subscribers (#); broadband coverage (%)</td>
+</tr>
+<tr>
+<td><strong>Tourism</strong></td>
+<td>Infrastructure gap; employment in hospitality</td>
+<td>Visitor arrivals (#); local content spending ($M)</td>
+</tr>
+<tr>
+<td><strong>Transportation</strong></td>
+<td>Logistics performance gap; multimodal connectivity</td>
+<td>Freight volume (t/year); GHG per ton-km</td>
+</tr>
+<tr>
+<td><strong>Venture Capital</strong></td>
+<td>VC ecosystem gap</td>
+<td>VC deals (#/$M); portfolio company survival rate</td>
+</tr>
+<tr>
+<td><strong>Water &amp; Wastewater</strong></td>
+<td>Safe water access gap (%); treatment rate</td>
+<td>People with new access (#); non-revenue water reduction (%)</td>
+</tr>
+<tr>
+<td><strong>Advisory Services</strong></td>
+<td>Institutional capacity gap</td>
+<td>Policy reforms adopted (#); persons trained</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source documents:</strong></p>
+<ul>
+<li><code>aimm_framework_complete/AIMM-General-Guidance-Note-Project-Assessment-and-Scoring-Guidance-Note.pdf</code> — AIMM General Guidance Note: Project Assessment and Scoring Guidance Note (IFC)</li>
+<li><code>aimm_framework_complete/carbon-pricing-guidance-note.pdf</code> — Carbon Pricing Guidance Note (IFC)</li>
+<li><code>aimm_framework_complete/aimm-sfb-agribusiness-consultation.pdf</code> — AIMM Sector Framework Brief: Agribusiness (July 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-capital-markets.pdf</code> — AIMM Sector Framework Brief: Capital Markets (February 2022)</li>
+<li><code>aimm_framework_complete/aimm-sfb-darp-consultation.pdf</code> — AIMM Sector Framework Brief: DARP — Distressed Asset Recovery Program (July 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-education-consultation.pdf</code> — AIMM Sector Framework Brief: Education (July 2019)</li>
+<li><code>aimm_framework_complete/aimm-sector-framework-brief-health.pdf</code> — AIMM Sector Framework Brief: Health (July 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-housing-consultation.pdf</code> — AIMM Sector Framework Brief: Housing (February 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-insurance-pf-consultation.pdf</code> — AIMM Sector Framework Brief: Insurance and Pension Funds (February 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-manufacturing-consultation.pdf</code> — AIMM Sector Framework Brief: Manufacturing (August 2019)</li>
+<li><code>aimm_framework_complete/aimm-mining-consultation.pdf</code> — AIMM Sector Framework Brief: Mining (March 2019)</li>
+<li><code>aimm_framework_complete/aimm-oil-and-gas-consultation.pdf</code> — AIMM Sector Framework Brief: Oil and Gas</li>
+<li><code>aimm_framework_complete/aimm-power-consultation.pdf</code> — AIMM Sector Framework Brief: Power</li>
+<li><code>aimm_framework_complete/aimm-sfb-ports.pdf</code> — AIMM Sector Framework Brief: Ports (September 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-private-equity-funds-consultation.pdf</code> — AIMM Sector Framework Brief: Private Equity Funds (February 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-retail-consultation.pdf</code> — AIMM Sector Framework Brief: Retail</li>
+<li><code>aimm_framework_complete/aimm-sfb-roads.pdf</code> — AIMM Sector Framework Brief: Roads (August 2019)</li>
+<li><code>aimm_framework_complete/aimm-sme-consultation.pdf</code> — AIMM Sector Framework Brief: SME Finance (March 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-tmt.pdf</code> — AIMM Sector Framework Brief: Telecoms, Media, and Technology (September 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-tourism-consultation.pdf</code> — AIMM Sector Framework Brief: Tourism (February 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-transportation-consultation.pdf</code> — AIMM Sector Framework Brief: Transportation</li>
+<li><code>aimm_framework_complete/aimm-sfb-vc-direct-consultation.pdf</code> — AIMM Sector Framework Brief: Venture Capital — Direct Investment (July 2019)</li>
+<li><code>aimm_framework_complete/aimm-sfb-water-waste-water-consultation.pdf</code> — AIMM Sector Framework Brief: Water and Wastewater</li>
+<li><code>aimm_framework_complete/aimm-advisory-services-consultation.pdf</code> — AIMM Sector Framework Brief: Advisory Services</li>
+</ul>
+<hr>
+<h2 id="3-fast-infra--sustainable-infrastructure-label">3. FAST-Infra — Sustainable Infrastructure Label</h2>
+<p><strong>Framework:</strong> FAST-Infra Sustainable Infrastructure® Label
+<strong>Structure:</strong> 4 Dimensions · 14 Criteria · ~220 indicators (unique alphanumeric IDs)
+<strong>Label types:</strong> Self-Assessed (ops: valid 24 months, refresh every 12 months) | Verified (valid 36 months, annual surveillance audit)</p>
+<h3 id="how-the-scoring-works">How the scoring works</h3>
+<p>FAST-Infra uses a universal indicator set for all infrastructure sectors. Each indicator has a permanent alphanumeric ID. Two indicator types drive label eligibility: <strong>Baseline Requirements</strong> (all 14 criteria must be met) and <strong>Positive Contributions</strong> (at least one criterion must show a measurable contribution beyond baseline). Time-series indicators use <code>.A</code> (historical) and <code>.B</code> (forecast) suffixes, enabling longitudinal tracking. Projects additionally must satisfy <strong>Minimum Safeguards</strong> before any criterion is scored.</p>
+<h3 id="minimum-safeguards-pre-requisite-for-all-criteria">Minimum Safeguards (pre-requisite for all criteria)</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it requires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MS.YP8</td>
+<td>Environmental and Social Impact Assessment (ESIA) by qualified independent firm</td>
+</tr>
+<tr>
+<td>MS.1PV</td>
+<td>Climate Risk &amp; Resilience Assessment aligned with TCFD</td>
+</tr>
+<tr>
+<td>MS.5BA</td>
+<td>Sustainability and Mitigation Action Plan</td>
+</tr>
+<tr>
+<td>MS.H4C</td>
+<td>Stakeholder Engagement Plan</td>
+</tr>
+<tr>
+<td>MS.TT5</td>
+<td>Environmental and Social Management System (ESMS), reviewed externally</td>
+</tr>
+<tr>
+<td>MS.W4A</td>
+<td>IFC Performance Standards or Equator Principles alignment assessment</td>
+</tr>
+<tr>
+<td>MS.MW7</td>
+<td>Environmental and Social Action Plan (ESAP, optional but disclosed)</td>
+</tr>
+<tr>
+<td>MS.X4Y</td>
+<td>Risk assessment on Associated Facilities (if applicable)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="environmental-dimension">Environmental Dimension</h3>
+<p><strong>E1 — Biodiversity and Ecosystem Services</strong></p>
+<p><em>Baseline:</em> Comply with national biodiversity strategies; avoid/mitigate impacts on critical habitats and ecological corridors; demonstrate no net loss (non-critical habitats) or net gains (critical habitats); conduct biodiversity and ecosystem service risk assessment; assess cumulative landscape-scale impacts; establish long-term monitoring and adaptive management scheme.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1.FG3</td>
+<td>Compliance with national/subnational biodiversity strategies</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E1.1YN</td>
+<td>Avoidance of impacts on critical habitats and ecological corridors</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E1.8BR</td>
+<td>Net gains (critical habitats) or no net loss (non-critical habitats) demonstrated</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E1.UM1</td>
+<td>Biodiversity and ecosystem service risk assessment conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E1.QW4</td>
+<td>Cumulative impacts assessed at landscape/seascape level</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E1.I5G</td>
+<td>Long-term biodiversity monitoring scheme in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E1.IO1</td>
+<td>Nature-Based Solutions incorporated (IUCN definition)</td>
+<td>Yes/No</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1.4OO.3.A / .B</td>
+<td>Expenditure on biodiversity measures (prior year / forecasted)</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>E1.UO5</td>
+<td>Increase in area of natural habitats</td>
+<td>hectares</td>
+</tr>
+<tr>
+<td>E1.8OA</td>
+<td>Decrease of degraded habitats</td>
+<td>hectares</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>E2 — Climate Change Mitigation</strong></p>
+<p><em>Baseline:</em> Comply with national/sub-national climate targets; monitor scope 1, 2, and 3 GHG emissions with a governance structure; set GHG reduction targets (Net Zero preferred); disclose construction and operational emissions; implement mitigation measures; include climate requirements in tendering; plan for decommissioning emissions.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E2.D9U</td>
+<td>Compliance with national/sub-national climate targets and policies</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>E2.G2K</td>
+<td>Scope 1, 2, 3 emissions monitored with mitigation measures</td>
+<td>Yes — scope 1+2 / Yes — 1+2+3</td>
+</tr>
+<tr>
+<td>E2.G2K.1</td>
+<td>Scope 1 absolute emissions, prior calendar year</td>
+<td>tCO2e</td>
+</tr>
+<tr>
+<td>E2.G2K.2</td>
+<td>Scope 2 absolute emissions, prior calendar year</td>
+<td>tCO2e</td>
+</tr>
+<tr>
+<td>E2.G2K.3</td>
+<td>Scope 3 absolute emissions, prior calendar year</td>
+<td>tCO2e</td>
+</tr>
+<tr>
+<td>E2.O9E</td>
+<td>Carbon management governance structure in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E2.2SK</td>
+<td>GHG reduction targets set (incl. Net Zero)</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E2.TR9</td>
+<td>GHG mitigation measures implemented</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>E2.ZT8</td>
+<td>Climate mitigation requirements included in tendering</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>E2.C4U</td>
+<td>Decommissioning plan includes emissions minimisation</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E2.Q8W.A / .B</td>
+<td>Avoided GHG emissions (prior year / forecasted)</td>
+<td>tCO2e / tCO2e per year</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>E3 — Circular Economy and Resource Efficiency</strong></p>
+<p><em>Baseline:</em> Comply with circular economy and waste policies; conduct Life Cycle Assessment on material footprint; source from environmentally responsible suppliers; limit critical raw materials and maximise recycled content; develop waste management plan; implement strategies to reduce freshwater consumption; assess water availability; design for disassembly and include decommissioning costs.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E3.8TF</td>
+<td>Compliance with circular economy/waste/resource-efficiency policies</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>E3.9NH</td>
+<td>Life Cycle Assessment on material footprint conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E3.TY9</td>
+<td>Critical raw materials limited; recycled content maximised</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E3.8IE</td>
+<td>Waste management plan developed</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E3.A4I</td>
+<td>Strategies to reduce freshwater consumption</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E3.BO2</td>
+<td>Water availability in project area assessed</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E3.6XO.1</td>
+<td>Decommissioning costs included in financial model</td>
+<td>Yes/No</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E3.QK5.A / .B</td>
+<td>Water usage at project level (prior year / forecasted)</td>
+<td>m³/year</td>
+</tr>
+<tr>
+<td>E3.6TP.3.A / .B</td>
+<td>Expenditure on circular economy measures</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>E3.8VX</td>
+<td>Tons of waste diverted from landfill</td>
+<td>t</td>
+</tr>
+<tr>
+<td>E3.9IP</td>
+<td>Reduction in water withdrawal</td>
+<td>m³/year</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>E4 — Pollution Prevention and Control</strong></p>
+<p><em>Baseline:</em> Comply with pollution prevention and control policies; implement pollution management system; manage hazardous waste; meet wastewater discharge norms; keep air emissions within national norms/WHO guidelines; prevent soil contamination; minimise noise, light, radiation and vibration; undertake Cumulative Impact Assessment.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E4.KV9</td>
+<td>Compliance with pollution prevention and control policies</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>E4.8KU</td>
+<td>Pollution management system implemented</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E4.QN9</td>
+<td>Hazardous waste generated and managed</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>E4.V9T</td>
+<td>Wastewater discharge norms met</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E4.HB5</td>
+<td>Air emissions within national norms / WHO guidelines</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E4.6BK</td>
+<td>Disturbance (noise, vibration, light, radiation) minimised</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>E4.9LA</td>
+<td>Cumulative Impact Assessment undertaken</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E4.2MB.3.A / .B</td>
+<td>Spending on pollution prevention (prior year / forecasted)</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>E4.BR3.A / .B</td>
+<td>Solid waste safely managed</td>
+<td>t/year</td>
+</tr>
+<tr>
+<td>E4.S2H.A / .B</td>
+<td>Gaseous pollution safely managed</td>
+<td>m³ / m³ per year</td>
+</tr>
+<tr>
+<td>E4.7BL.A / .B</td>
+<td>Wastewater safely managed</td>
+<td>m³ / m³ per year</td>
+</tr>
+<tr>
+<td>E4.T9A</td>
+<td>Total people impacted by pollution prevention contribution</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="adaptation--resilience-dimension">Adaptation &amp; Resilience Dimension</h3>
+<p><strong>R5 — Resilience and Climate Adaptation</strong></p>
+<p><em>Baseline:</em> Comply with disaster risk reduction and climate resilience policies; identify interdependent systems; conduct Physical Climate Risk Assessment (including stress testing across climate scenarios); conduct Climate Transition Risk Assessment; assess human-made risks; set risk mitigation targets; establish governance framework for risk; implement adaptation measures.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R5.Z5G</td>
+<td>Compliance with disaster/climate resilience policies</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>R5.1JT</td>
+<td>Physical Climate Risk Assessment conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>R5.1JT.1</td>
+<td>Climate scenarios considered (incl. 1.5°C, 2°C, 4°C)</td>
+<td>Multi-select</td>
+</tr>
+<tr>
+<td>R5.R8S</td>
+<td>Climate Transition Risk Assessment conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>R5.R8S.1</td>
+<td>Transition scenarios considered</td>
+<td>Multi-select</td>
+</tr>
+<tr>
+<td>R5.1KI</td>
+<td>Human-made risk assessment conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>R5.TZ1</td>
+<td>Risk mitigation targets and programmes set</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>R5.8GV</td>
+<td>Structured governance framework for risk management</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>R5.UP6</td>
+<td>Adaptation measures implemented</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R5.B6D.3.A / .B</td>
+<td>Expenditure on resilience measures (prior year / forecasted)</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>R5.U2X.A / .B</td>
+<td>People positively impacted by resilience measures</td>
+<td>people / people per year</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="social-dimension">Social Dimension</h3>
+<p><strong>S6 — Inclusivity and Gender</strong></p>
+<p><em>Baseline:</em> Comply with gender equality and inclusion regulations; conduct GBVH risk assessment; develop and implement Gender Action Plan with KPIs; use sex-disaggregated data; ensure board representation; apply equal employment opportunity and wage parity; require contractors to do the same; provide separate facilities and zero-tolerance harassment policy; train staff on harassment management.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S6.9LA</td>
+<td>Compliance with gender/inclusion regulations</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>S6.LV7</td>
+<td>GBVH risk assessment and action plan in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S6.Z5Q</td>
+<td>Gender Action Plan developed and implemented</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S6.4PQ</td>
+<td>Gender Action Plan includes measurable targets/KPIs</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>S6.LS4.1</td>
+<td>Female representation on governing board</td>
+<td>%</td>
+</tr>
+<tr>
+<td>S6.X1I</td>
+<td>Wage parity policy for equivalent roles</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S6.Y7A</td>
+<td>Zero-tolerance sexual harassment policy</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S6.3WY.A / .B</td>
+<td>Female workers as % of permanent direct workforce</td>
+<td>%</td>
+</tr>
+<tr>
+<td>S6.Q5F.3.A / .B</td>
+<td>Expenditure on inclusivity/gender measures</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>S6.HB5</td>
+<td>Number of vulnerable people benefitting</td>
+<td>#</td>
+</tr>
+<tr>
+<td>S6.KV9</td>
+<td>Number of women benefitting</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>S7 — Health and Safety</strong></p>
+<p><em>Baseline:</em> Maintain OHS policy and plan; designate responsible OHS officer; conduct periodic OHS training; provide first aid and PPE; comply with OHS national laws and GIIP; monitor and track occupational accident rates; conduct Health Impact Assessment; maintain Community Health and Safety management plan; manage labour influx risks.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S7.YD5</td>
+<td>OHS policy and plan for workers in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S7.T8D</td>
+<td>Designated OHS responsible person</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>S7.QO5</td>
+<td>Compliance with OHS national laws and GIIP</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S7.Z9O</td>
+<td>Occupational accidents and injuries monitored</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>S7.Z9O.3</td>
+<td>Non-fatal occupational accident rate</td>
+<td>per 100,000 FTEs</td>
+</tr>
+<tr>
+<td>S7.8BR</td>
+<td>Health Impact Assessment conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S7.UM1</td>
+<td>Community Health and Safety management plan</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S7.3SB</td>
+<td>Labour Influx Management Plan in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S7.P8B.3.A / .B</td>
+<td>Expenditure on health &amp; safety measures</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>S7.X4B</td>
+<td>Number of people with improved health and safety</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>S8 — Human Rights and Labour Rights</strong></p>
+<p><em>Baseline:</em> Align with ILO conventions; protect all direct workers' rights; prohibit forced and child labour; guarantee freedom of association and collective bargaining; enforce equal opportunity and non-discrimination; require no child-labour clauses in all contracts; conduct human rights due diligence; provide grievance mechanism; promote local employment.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S8.FD1</td>
+<td>Workers' rights aligned with ILO conventions</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S8.FA6</td>
+<td>Forced labour and child labour prohibited</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S8.A7L</td>
+<td>Freedom of association and collective bargaining guaranteed</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S8.U3O</td>
+<td>Equal opportunity and non-discrimination policy</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S8.YL6</td>
+<td>No child-labour clause in all contracts</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S8.9BT</td>
+<td>Human rights due diligence assessment conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S8.9MP</td>
+<td>Grievance mechanism accessible to all workers</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S8.W7L</td>
+<td>Remuneration policy meets at least minimum wage</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S8.7ZH.3.A / .B</td>
+<td>Expenditure on human/labour rights measures</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>S8.I8Q</td>
+<td>Number of people with secure employment created</td>
+<td>#</td>
+</tr>
+<tr>
+<td>S8.GC2</td>
+<td>Percentage of local workforce</td>
+<td>%</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>S9 — Land Acquisition and Resettlement</strong></p>
+<p><em>Baseline:</em> Identify project-related displacement; implement Resettlement Action Plan (RAP) or Livelihood Restoration Plan (LRP); conduct census to identify eligible persons; compensate at full replacement cost; disclose information and consult affected communities; meet separately with vulnerable groups; design project to minimise displacement; address climate impacts in resettlement planning.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S9.O7H</td>
+<td>Project-related land displacement identified</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>S9.9LQ</td>
+<td>RAP / LRP in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S9.OE1</td>
+<td>Eligible persons identified via census</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S9.OE1.1</td>
+<td>Compensation provided at full replacement cost</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S9.OE1.3</td>
+<td>Vulnerable groups met with separately</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S9.2QR</td>
+<td>Project design minimises displacement</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S9.8JJ</td>
+<td>Resettlement plan addresses climate impacts</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<p><em>Positive Contribution (time-series):</em></p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S9.B1G.3.A / .B</td>
+<td>Expenditure on land/resettlement measures</td>
+<td>USD / USD per year</td>
+</tr>
+<tr>
+<td>S9.QN8</td>
+<td>Number of affected people benefitting</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>S10 — Stakeholder Engagement</strong> <em>(Baseline only — no Positive Contribution)</em></p>
+<p><em>Baseline:</em> Conduct stakeholder mapping; develop and update Stakeholder Engagement Plan annually; effectively engage throughout lifecycle; include engagement in budget; identify affected communities; provide accessible information to vulnerable groups; consult indigenous peoples; obtain FPIC where required; maintain grievance mechanism; protect cultural heritage.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S10.HW8</td>
+<td>Stakeholder mapping undertaken</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S10.K2M</td>
+<td>Stakeholder Engagement Plan considers all needs</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S10.8CC</td>
+<td>Engagement plan revised annually</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>S10.A7P</td>
+<td>Number of directly affected people</td>
+<td>#</td>
+</tr>
+<tr>
+<td>S10.KW5.1</td>
+<td>Indigenous peoples consulted</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>S10.OF4.2</td>
+<td>Free, Prior and Informed Consent (FPIC) obtained</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>S10.5SI.1</td>
+<td>Grievances received (count)</td>
+<td>#</td>
+</tr>
+<tr>
+<td>S10.5SI.2</td>
+<td>Grievances addressed/resolved (count)</td>
+<td>#</td>
+</tr>
+<tr>
+<td>S10.SO5.A / .B</td>
+<td>Budget for stakeholder engagement — development/construction</td>
+<td>USD</td>
+</tr>
+<tr>
+<td>S10.W5V.A / .B</td>
+<td>Expenditure on stakeholder engagement — operations</td>
+<td>USD / USD per year</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="governance-dimension">Governance Dimension</h3>
+<blockquote>
+<p>All governance criteria (G11–G14) are <strong>Baseline Requirements only</strong> — no Positive Contribution section.</p>
+</blockquote>
+<p><strong>G11 — Anti-Corruption</strong></p>
+<p><em>Baseline:</em> Maintain comprehensive anti-corruption management system with annual reviews; communicate code of conduct; provide annual training; designate a responsible person; disclose anti-corruption principles publicly; conduct corruption risk assessment; maintain internal whistleblowing system; track confirmed incidents.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G11.PT2</td>
+<td>Comprehensive anti-corruption management system in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G11.N1K</td>
+<td>Annual reviews of anti-corruption system</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G11.9SA</td>
+<td>Annual training on code of conduct</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G11.9SA.1</td>
+<td>Percentage of staff trained on code of conduct</td>
+<td>%</td>
+</tr>
+<tr>
+<td>G11.4UO</td>
+<td>Corruption risk assessment conducted</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G11.PV5</td>
+<td>Internal whistleblowing system in place</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G11.4UQ</td>
+<td>Confirmed corruption incidents (count)</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>G12 — Transparency and Accountability</strong></p>
+<p><em>Baseline:</em> Promote ethics and accountability; disclose environmental and social targets/risks publicly; require sustainability criteria in tendering; disclose ultimate beneficial owners; report nature-related impacts (TNFD-aligned); provide workers access to documentation; demonstrate transparent project award process.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G12.PQ5</td>
+<td>Compliance with applicable transparency laws</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>G12.YL6.1</td>
+<td>Tendering conducted according to best practices</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G12.YL6.2</td>
+<td>Sustainability criteria included in tender</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G12.W7L</td>
+<td>Ultimate beneficial owners disclosed</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G12.2VU</td>
+<td>Environmental and social targets/risks disclosed publicly</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G12.2AG</td>
+<td>Nature-related impacts disclosed (TNFD-aligned)</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G12.2AG.1</td>
+<td>TNFD disclosure pillars covered</td>
+<td>Multi-select</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>G13 — Financial Integrity and Fiscal Transparency</strong></p>
+<p><em>Baseline:</em> Report required financial information; maintain a tax strategy coherent with operations and approved by governance; document any tax exemptions; avoid non-cooperative tax jurisdictions; demonstrate audited financial statements; assess and disclose impact of government payment obligations on sovereign debt.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G13.Q7P</td>
+<td>Required financial information reported</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>G13.5UW</td>
+<td>Tax strategy coherent with business operations</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G13.GS2</td>
+<td>Tax strategy approved by governance body</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G13.5PI</td>
+<td>Located in non-cooperative tax jurisdiction (flag)</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>G13.RL7</td>
+<td>Audited financial statements demonstrated</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G13.BH8.1</td>
+<td>Financial model shared with government</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G13.BH8.2</td>
+<td>Impact on sovereign debt reported</td>
+<td>Yes/No/Committed</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>G14 — Sustainable Reporting and Compliance</strong></p>
+<p><em>Baseline:</em> Track sustainability performance with time-bound milestones; include environmental and social actions in project budget; report actual and forecasted expenditure on E&amp;S actions throughout lifecycle.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator ID</th>
+<th>What it measures</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G14.4ZI</td>
+<td>Sustainability tracked with time-bound milestones</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G14.IL3</td>
+<td>Environmental and social actions included in project budget</td>
+<td>Yes/No/Committed</td>
+</tr>
+<tr>
+<td>G14.N4B.A / .B</td>
+<td>Budget for E&amp;S actions — development/construction (actual / forecasted)</td>
+<td>USD</td>
+</tr>
+<tr>
+<td>G14.2AG.A / .B</td>
+<td>Expenditure on E&amp;S actions — operations (prior year / forecasted)</td>
+<td>USD / USD per year</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="full-time-series-indicator-summary-19-pairs">Full Time-Series Indicator Summary (19 pairs)</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator Pair</th>
+<th>Description</th>
+<th>Unit</th>
+<th>Criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1.4OO.3.A/.B</td>
+<td>Biodiversity measures expenditure</td>
+<td>USD</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>E2.Q8W.A/.B</td>
+<td>Avoided GHG emissions</td>
+<td>tCO2e</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>E3.QK5.A/.B</td>
+<td>Water usage at project level</td>
+<td>m³/year</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>E3.6TP.3.A/.B</td>
+<td>Circular economy measures expenditure</td>
+<td>USD</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>E4.2MB.3.A/.B</td>
+<td>Pollution prevention expenditure</td>
+<td>USD</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>E4.BR3.A/.B</td>
+<td>Solid waste safely managed</td>
+<td>t/year</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>E4.S2H.A/.B</td>
+<td>Gaseous pollution safely managed</td>
+<td>m³</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>E4.7BL.A/.B</td>
+<td>Wastewater safely managed</td>
+<td>m³</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>R5.B6D.3.A/.B</td>
+<td>Resilience measures expenditure</td>
+<td>USD</td>
+<td>R5</td>
+</tr>
+<tr>
+<td>R5.U2X.A/.B</td>
+<td>People positively impacted by resilience</td>
+<td>people/year</td>
+<td>R5</td>
+</tr>
+<tr>
+<td>S6.3WY.A/.B</td>
+<td>Female workers (permanent, direct)</td>
+<td>%</td>
+<td>S6</td>
+</tr>
+<tr>
+<td>S6.Q5F.3.A/.B</td>
+<td>Inclusivity/gender measures expenditure</td>
+<td>USD</td>
+<td>S6</td>
+</tr>
+<tr>
+<td>S7.P8B.3.A/.B</td>
+<td>Health &amp; safety measures expenditure</td>
+<td>USD</td>
+<td>S7</td>
+</tr>
+<tr>
+<td>S8.7ZH.3.A/.B</td>
+<td>Human/labour rights measures expenditure</td>
+<td>USD</td>
+<td>S8</td>
+</tr>
+<tr>
+<td>S9.B1G.3.A/.B</td>
+<td>Land/resettlement measures expenditure</td>
+<td>USD</td>
+<td>S9</td>
+</tr>
+<tr>
+<td>S10.SO5.A/.B</td>
+<td>Stakeholder engagement budget (dev/const)</td>
+<td>USD</td>
+<td>S10</td>
+</tr>
+<tr>
+<td>S10.W5V.A/.B</td>
+<td>Stakeholder engagement expenditure (ops)</td>
+<td>USD/year</td>
+<td>S10</td>
+</tr>
+<tr>
+<td>G14.N4B.A/.B</td>
+<td>E&amp;S actions budget (dev/const)</td>
+<td>USD</td>
+<td>G14</td>
+</tr>
+<tr>
+<td>G14.2AG.A/.B</td>
+<td>E&amp;S actions expenditure (ops)</td>
+<td>USD/year</td>
+<td>G14</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unique feature:</strong> Every indicator has a permanent alphanumeric ID enabling consistent tracking across projects, geographies, and time — unlike most MDB frameworks where indicator definitions vary by project. Nature-Based Solutions (NbS) can be claimed as a qualifying element within the Positive Contribution of any non-governance criterion.</p>
+<p><strong>Source documents:</strong></p>
+<ul>
+<li><code>fastinfra_framework_complete/68a44d2347380f7f25d23d24_ST01_V2_05.12.2024.pdf</code> — ST01 Dimensions, Criteria and Indicators, v1.0 (Nov 2024; effective Jan 2025)</li>
+<li><code>fastinfra_framework_complete/6966363e6cf7c15024fea040_ST02_Methodology_20.11.2024.pdf</code> — ST02 Methodology, v1.0 (Nov 2024)</li>
+<li><code>fastinfra_framework_complete/6966364778f8be6f4bbef979_RQ01_FASTInfraLabel_Verification_Labelling_Requirements_2025.pdf</code> — RQ01 Verification and Labelling Requirements, v0.2 (2025)</li>
+<li><code>fastinfra_framework_complete/67581e70ec0f49f4356a8644_Glossary_V1_05.12.2024.pdf</code> — Glossary, v1.0 (Dec 2024)</li>
+<li><code>fastinfra_framework_complete/67581e5c0f02ad594c6015be_Bibliography_V1_05.12.202.pdf</code> — Bibliography, v1.0 (Dec 2024)</li>
+</ul>
+<hr>
+<h2 id="4-adb--design-and-monitoring-framework-dmf">4. ADB — Design and Monitoring Framework (DMF)</h2>
+<p><strong>Framework:</strong> DMF aligned with Strategy 2030
+<strong>Logic chain:</strong> Inputs → Activities → Outputs → Outcomes → Impact
+<strong>Ex-post rating:</strong> 4-point scale using OECD-DAC criteria (Relevance, Effectiveness, Efficiency, Impact, Sustainability)</p>
+<h3 id="how-the-scoring-works">How the scoring works</h3>
+<p>The DMF is a results chain: each project defines outputs (physical and institutional deliverables) and outcomes (benefits to target groups). Ex-post evaluation uses the OECD-DAC criteria rated on a 4-point scale. Strategy 2030 adds corporate-level cross-cutting indicators across all projects.</p>
+<h3 id="outcome-indicators-what-changes-for-beneficiaries">Outcome Indicators (what changes for beneficiaries)</h3>
+<table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Key Outcome Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transport</td>
+<td>Travel cost reduction (%); traffic volume increase; road safety rating improvement</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>Households with new electricity connections (#); renewable capacity added (MW)</td>
+</tr>
+<tr>
+<td>Water / Urban</td>
+<td>Residents with improved water supply (#); flood damage reduction ($M)</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>% of projects with &quot;Effective Gender Mainstreaming&quot; rating; female employment growth</td>
+</tr>
+</tbody>
+</table>
+<h3 id="output-indicators-what-is-physically-delivered">Output Indicators (what is physically delivered)</h3>
+<table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Key Output Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical assets</td>
+<td>Km of all-weather roads built; solar mini-grids installed (#)</td>
+</tr>
+<tr>
+<td>Institutional</td>
+<td>Staff trained (#); policies approved by regulatory bodies (#)</td>
+</tr>
+<tr>
+<td>Health / Education</td>
+<td>New schools/clinics built (#); teachers/health workers trained (#)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="strategy-2030-corporate-level-indicators">Strategy 2030 Corporate-Level Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Indicator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Climate finance</td>
+<td>Adaptation and mitigation finance per project ($M)</td>
+</tr>
+<tr>
+<td>Private capital mobilization</td>
+<td>Volume of private finance co-leveraged ($M)</td>
+</tr>
+<tr>
+<td>Sustainability</td>
+<td>Project durability score beyond the financing period</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source documents:</strong> <em>DEFR Results Framework — Indicator Definitions</em> (Mar 2025); <em>DEFR Tracking Indicator Definitions</em> (Mar 2025).</p>
+<hr>
+<h2 id="5-aiib--results-monitoring-framework-rmf">5. AIIB — Results Monitoring Framework (RMF)</h2>
+<p><strong>Framework:</strong> Results Architecture — two-level (Project + Corporate)
+<strong>Project rating:</strong> 4-point scale: Highly Satisfactory / Satisfactory / Moderately Unsatisfactory / Highly Unsatisfactory
+<strong>Evaluation criteria:</strong> 6 OECD-DAC criteria + AIIB Work Quality (7th criterion)
+<strong>Climate target:</strong> ≥50% of financing as climate finance by 2025</p>
+<h3 id="how-the-scoring-works">How the scoring works</h3>
+<p>At the <strong>project level</strong>, each project defines Project Development Objectives (PDOs, i.e., outcomes) and Intermediate Results Indicators (IRIs, i.e., outputs). Progress is tracked at three points: ex-ante (appraisal), mid-term, and completion. At the <strong>corporate level</strong>, AIIB tracks three elements: portfolio volume, portfolio alignment with strategic targets, and portfolio performance.</p>
+<h3 id="project-level-pdo-indicators-outcomes">Project-Level: PDO Indicators (outcomes)</h3>
+<table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Key PDO Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Water</td>
+<td>People with safely managed water access (# disaggregated by gender); non-revenue water reduction (%)</td>
+</tr>
+<tr>
+<td>Sanitation</td>
+<td>People with safely managed sanitation (# disaggregated by gender)</td>
+</tr>
+<tr>
+<td>Urban mobility</td>
+<td>Public transport journey time reduction; daily passengers (# disaggregated by gender); on-time performance (%)</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>Annual renewable generation (GWh); GHG reduced (tCO2e/year)</td>
+</tr>
+<tr>
+<td>Digital</td>
+<td>Broadband penetration rate increase (%); people with new high-speed access (#)</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>Private capital mobilized ($M); SMEs receiving financing (#)</td>
+</tr>
+<tr>
+<td>Manufacturing</td>
+<td>Capacity installed (MW); sales volume; export volume; employee diversity (%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="project-level-intermediate-results-indicators-outputs">Project-Level: Intermediate Results Indicators (outputs)</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Key IRI Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical progress</td>
+<td>Km of roads built/rehabilitated; substations constructed (#); water pipes laid (km)</td>
+</tr>
+<tr>
+<td>Institutional</td>
+<td>Regulatory reforms completed (#); O&amp;M systems established; staff trained (#)</td>
+</tr>
+<tr>
+<td>Social / Gender</td>
+<td>Female beneficiaries (#); gender-responsive designs implemented; grievance redressal rate (%)</td>
+</tr>
+<tr>
+<td>Environmental</td>
+<td>Land restored (ha); environmental mitigation plans completed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="corporate-level-targets">Corporate-Level Targets</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Indicator / Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Portfolio volume</td>
+<td>Total resources mobilized; private financing catalyzed ($M)</td>
+</tr>
+<tr>
+<td>Portfolio alignment — Climate</td>
+<td>≥50% climate finance share by 2025</td>
+</tr>
+<tr>
+<td>Portfolio alignment — Connectivity</td>
+<td>25–30% cross-border connectivity by 2030</td>
+</tr>
+<tr>
+<td>Portfolio alignment — Private sector</td>
+<td>50% private sector operations by 2030</td>
+</tr>
+<tr>
+<td>Portfolio performance</td>
+<td>Annual disbursement ratio; projects without severe issues (%); completion success rate</td>
+</tr>
+</tbody>
+</table>
+<h3 id="evaluation-framework-lef--learning-and-evaluation-framework">Evaluation Framework (LEF — Learning and Evaluation Framework)</h3>
+<p>AIIB evaluates completed projects against 7 criteria:</p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Core question</th>
+<th>What is assessed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Relevance</td>
+<td>Right project?</td>
+<td>Alignment with AIIB and client priorities; design appropriateness</td>
+</tr>
+<tr>
+<td>Effectiveness</td>
+<td>Achieving objectives?</td>
+<td>Intended/unintended results; distribution of benefits</td>
+</tr>
+<tr>
+<td>Efficiency</td>
+<td>Good use of resources?</td>
+<td>Financial rate of return (FRR); EIRR; cost overruns; delays</td>
+</tr>
+<tr>
+<td>Sustainability</td>
+<td>Benefits lasting?</td>
+<td>Financial, economic, social, environmental sustainability</td>
+</tr>
+<tr>
+<td>Impact</td>
+<td>Broader effects?</td>
+<td>Higher-level development change beyond project scope</td>
+</tr>
+<tr>
+<td>AIIB Work Quality</td>
+<td>AIIB's own performance?</td>
+<td>Due diligence quality; supervision quality; lessons integration</td>
+</tr>
+</tbody>
+</table>
+<p><em>Criteria are not mechanically aggregated — evaluators apply context-dependent weighting.</em></p>
+<h3 id="environmental--social-standards-from-esf-and-bond-framework">Environmental &amp; Social Standards (from ESF and Bond Framework)</h3>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Key Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GHG</td>
+<td>tCO2e reduced per year; renewable capacity added (MW)</td>
+</tr>
+<tr>
+<td>Air quality</td>
+<td>NOx, SO2 (t/year); PM2.5 (μg/m³)</td>
+</tr>
+<tr>
+<td>Land</td>
+<td>Hectares protected or restored</td>
+</tr>
+<tr>
+<td>Water / Sanitation</td>
+<td>Households with access (#)</td>
+</tr>
+<tr>
+<td>Digital</td>
+<td>People with internet access or digital services (#)</td>
+</tr>
+<tr>
+<td>Climate resilience</td>
+<td>Beneficiaries with improved climate resilience (#)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source documents:</strong></p>
+<ul>
+<li><code>aiib_framework_complete/AIIB-Results-Architecture_Final-For-Public-Website.pdf</code> — AIIB Results Architecture (public)</li>
+<li><code>aiib_framework_complete/AIIB-Corporate-Strategy.pdf</code> — Corporate Strategy: Financing Infrastructure for Tomorrow (revised June 2025)</li>
+<li><code>aiib_framework_complete/AIIB-LEF-Guide-Evaluation-Criteria.pdf</code> — LEF Guide: Evaluation Criteria (September 2021)</li>
+<li><code>aiib_framework_complete/AIIB-Environmental-and-Social-Framework_ESF-June-2024.pdf</code> — Environmental and Social Framework (amended June 2024)</li>
+<li><code>aiib_framework_complete/AIIB-SUSTAINABLE-DEVELOPMENT-BOND-FRAMEWORK.pdf</code> — Sustainable Development Bond Framework (April 2021)</li>
+<li><code>aiib_framework_complete/AIIB-Sustainable-Development-Bonds-Impact-Report-2024-Web.pdf</code> — Sustainable Development Bonds Impact Report 2024</li>
+</ul>
+<hr>
+<h2 id="6-idb--2024%E2%80%932030-impact-framework">6. IDB — 2024–2030 Impact Framework</h2>
+<p><strong>Framework:</strong> Development Effectiveness Overview (DEO); annual ex-post/ex-ante reporting
+<strong>Three pillars:</strong> Social Progress | Economic Growth | Climate Action</p>
+<h3 id="social-indicators">Social Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Education</td>
+<td>Students benefiting from improved school conditions (#)</td>
+</tr>
+<tr>
+<td>Health</td>
+<td>Individuals with access to improved health services (#)</td>
+</tr>
+<tr>
+<td>Social protection</td>
+<td>Households receiving social transfers (#)</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>% of projects with specific gender outcomes; gender gap reduction</td>
+</tr>
+</tbody>
+</table>
+<h3 id="economic-indicators">Economic Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Innovation</td>
+<td>SMEs adopting new technologies/processes (#)</td>
+</tr>
+<tr>
+<td>Infrastructure</td>
+<td>Km of paved roads built/rehabilitated; GWh of energy generated</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>Loans to SMEs ($M); private capital mobilized ($M)</td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>Cross-border trade efficiency improvement (%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="climate-and-environmental-indicators">Climate and Environmental Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GHG reduction</td>
+<td>Annual tCO2e avoided or reduced</td>
+</tr>
+<tr>
+<td>Renewable energy</td>
+<td>Capacity installed (MW)</td>
+</tr>
+<tr>
+<td>Adaptation</td>
+<td>People with increased climate resilience (#)</td>
+</tr>
+<tr>
+<td>Biodiversity</td>
+<td>Land/marine ecosystems protected (ha)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="institutional-capacity-indicators">Institutional Capacity Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transparency</td>
+<td>Public entities with improved financial management systems (#)</td>
+</tr>
+<tr>
+<td>Regulation</td>
+<td>New or improved regulatory frameworks adopted (#)</td>
+</tr>
+<tr>
+<td>Fiduciary</td>
+<td>Procurement time/cost reduction (%)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source documents:</strong> <em>IDB 2024–2030 Impact Framework</em>; <em>Development Effectiveness Overview (DEO)</em> (annual, public).</p>
+<hr>
+<h2 id="7-isdb--realigned-strategy-2023%E2%80%932025">7. IsDB — Realigned Strategy 2023–2025</h2>
+<p><strong>Framework:</strong> 10-Year Strategy + Realigned Strategy 2023–2025; results mapped to SDGs and Maqasid al-Shari'ah
+<strong>Unique layer:</strong> Islamic ethical objectives integrated alongside standard development indicators</p>
+<h3 id="social-development-indicators">Social Development Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Poverty</td>
+<td>Households with improved livelihoods (#)</td>
+</tr>
+<tr>
+<td>Health</td>
+<td>Beneficiaries with access to improved health services (#)</td>
+</tr>
+<tr>
+<td>Education</td>
+<td>Students enrolled in new/rehabilitated schools (#)</td>
+</tr>
+<tr>
+<td>Inclusion</td>
+<td>Female beneficiaries (#); jobs created for youth (#)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="infrastructure--productivity-indicators">Infrastructure &amp; Productivity Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energy</td>
+<td>New electricity capacity (MW); people with new connections (#)</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>Km of all-weather roads built or improved</td>
+</tr>
+<tr>
+<td>Agribusiness</td>
+<td>Smallholder farmers with improved market access (#)</td>
+</tr>
+<tr>
+<td>SME growth</td>
+<td>Loans to micro, small, and medium enterprises ($M)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="climate-action--resilience-indicators">Climate Action &amp; Resilience Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mitigation</td>
+<td>Annual GHG avoided or reduced (tCO2e)</td>
+</tr>
+<tr>
+<td>Adaptation</td>
+<td>People with increased resilience to climate/disaster risk (#)</td>
+</tr>
+<tr>
+<td>Water</td>
+<td>Households with improved water and sanitation access (#)</td>
+</tr>
+<tr>
+<td>Green finance</td>
+<td>Volume of green financing mobilized ($M)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="maqasid-al-shariah-indicators--islamic-ethical-layer">Maqasid al-Shari'ah Indicators — Islamic Ethical Layer</h3>
+<p>These five objectives map Islamic principles onto development outcomes, giving IsDB a unique dual-reporting structure:</p>
+<table>
+<thead>
+<tr>
+<th>Islamic Objective</th>
+<th>Meaning</th>
+<th>Development Counterpart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Hifz al-Nafs</em></td>
+<td>Protection of Life</td>
+<td>Health and safety outcomes</td>
+</tr>
+<tr>
+<td><em>Hifz al-Mal</em></td>
+<td>Protection of Wealth</td>
+<td>Economic empowerment; financial inclusion</td>
+</tr>
+<tr>
+<td><em>Hifz al-Nasl</em></td>
+<td>Protection of Progeny</td>
+<td>Education; youth development</td>
+</tr>
+<tr>
+<td><em>Hifz al-'Aql</em></td>
+<td>Protection of Intellect</td>
+<td>Knowledge, research, innovation</td>
+</tr>
+<tr>
+<td><em>Hifz al-Din</em></td>
+<td>Protection of Faith/Values</td>
+<td>Social cohesion; ethical governance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source documents:</strong> <em>IsDB 10-Year Strategy</em>; <em>Realigned Strategy 2023–2025</em>.</p>
+<hr>
+<h2 id="8-ndb--general-strategy-2022%E2%80%932026">8. NDB — General Strategy 2022–2026</h2>
+<p><strong>Framework:</strong> General Strategy 2022–2026 + NDB Evaluation Manual
+<strong>Focus:</strong> Sustainable infrastructure exclusively; BRICS + invited emerging economies; SDG-aligned</p>
+<h3 id="energy-indicators">Energy Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean energy</td>
+<td>Annual renewable energy generation (GWh); capacity added (MW)</td>
+</tr>
+<tr>
+<td>Efficiency</td>
+<td>Annual energy savings (GWh/year); transmission loss reduction (%)</td>
+</tr>
+<tr>
+<td>GHG reduction</td>
+<td>Annual tCO2e avoided or reduced</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transport-infrastructure-indicators">Transport Infrastructure Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connectivity</td>
+<td>Km of new/rehabilitated roads, railway tracks, or subway lines</td>
+</tr>
+<tr>
+<td>Freight / Passenger</td>
+<td>Annual passenger trips (#); annual freight volume (t/year)</td>
+</tr>
+<tr>
+<td>Efficiency</td>
+<td>Travel time reduction (%); logistics cost reduction (%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="water-and-social-infrastructure-indicators">Water and Social Infrastructure Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Water supply</td>
+<td>People with new/improved safe water access (#); daily supply (m³)</td>
+</tr>
+<tr>
+<td>Sanitation</td>
+<td>People with improved sanitation (#); wastewater treated (m³/day)</td>
+</tr>
+<tr>
+<td>Social</td>
+<td>Students/patients benefiting from improved infrastructure (#)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="digital-infrastructure-indicators">Digital Infrastructure Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connectivity</td>
+<td>People with new/improved broadband access (#)</td>
+</tr>
+<tr>
+<td>Digital services</td>
+<td>Businesses adopting digital platforms (#)</td>
+</tr>
+<tr>
+<td>Efficiency</td>
+<td>Internet data throughput increase (Gbps)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="private-sector-development-indicators">Private Sector Development Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Private capital mobilization (PCM)</td>
+<td>Private capital mobilized directly/indirectly ($M)</td>
+</tr>
+<tr>
+<td>Business growth</td>
+<td>Private sector firms supported (#); jobs created (#)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source documents:</strong> <em>NDB General Strategy 2022–2026</em>; <em>NDB Evaluation Manual</em>.</p>
+<hr>
+<h2 id="9-afdb--adoa-additionality-and-development-outcomes-assessment-30">9. AfDB — ADOA (Additionality and Development Outcomes Assessment) 3.0</h2>
+<p><strong>Framework:</strong> ADOA 3.0 — applies to all Non-Sovereign Operations (NSO) of the African Development Bank
+<strong>Scoring scale:</strong> 4-point qualitative scale (Excellent / Good / Marginal / Poor) mapped to a continuous 1–10 score
+<strong>Two main dimensions:</strong> Development Outcomes + Additionality (DFI value-add)</p>
+<h3 id="how-the-scoring-works">How the scoring works</h3>
+<p>Each project is rated across two top-level dimensions. <strong>Development Outcomes</strong> measures the actual benefits generated for people, markets, and the environment. <strong>Additionality</strong> measures what the AfDB contributes that would not have happened without its involvement (financial and non-financial). Both dimensions are likelihood-adjusted for country and project context risk. A project in a highly constrained environment (rated on a 3-point context scale) is judged more favourably than the same project in an easy environment.</p>
+<p><strong>Context scale:</strong> Highly Constrained → Constrained → Unconstrained
+<strong>Outcome categories rated:</strong> 6–7 categories depending on sector, each scored Excellent / Good / Marginal / Poor</p>
+<h3 id="development-outcomes-dimension">Development Outcomes Dimension</h3>
+<table>
+<thead>
+<tr>
+<th>Outcome Category</th>
+<th>Key Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Access to financial services</strong></td>
+<td>New accounts opened (#); loans to MSMEs ($M/unit); insurance policies written (#)</td>
+</tr>
+<tr>
+<td><strong>Access to goods &amp; services</strong></td>
+<td>Housing units financed (#); transport connections improved; utilities connected (#)</td>
+</tr>
+<tr>
+<td><strong>Private sector development</strong></td>
+<td>Firms supported (#); market entrants (#); investment catalyzed ($M); jobs created (#)</td>
+</tr>
+<tr>
+<td><strong>Household outcomes</strong></td>
+<td>Beneficiary income improvement (%); poverty reduction contribution; livelihood diversification</td>
+</tr>
+<tr>
+<td><strong>Resilience &amp; adaptation</strong></td>
+<td>People with improved climate resilience (#); assets protected; adaptation investment ($M)</td>
+</tr>
+<tr>
+<td><strong>Environment &amp; climate</strong></td>
+<td>GHG avoided/reduced (tCO2e/year); renewable capacity added (MW); land restored (ha)</td>
+</tr>
+<tr>
+<td><strong>Regional integration</strong></td>
+<td>Cross-border infrastructure projects (#); trade facilitation impact; regional connectivity improvement</td>
+</tr>
+</tbody>
+</table>
+<h3 id="additionality-dimension">Additionality Dimension</h3>
+<table>
+<thead>
+<tr>
+<th>Additionality Type</th>
+<th>What it measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Financial additionality</strong></td>
+<td>Whether project financing terms (tenor, risk, pricing) fill a genuine market gap; mobilization of co-investors ($M)</td>
+</tr>
+<tr>
+<td><strong>Non-financial additionality</strong></td>
+<td>Technical assistance provided; knowledge transfer; governance/standards improvements; reputational signalling</td>
+</tr>
+<tr>
+<td><strong>Political risk mitigation</strong></td>
+<td>AfDB participation reducing sovereign/regulatory risk perception for private investors</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sector-specific-frameworks">Sector-Specific Frameworks</h3>
+<p>ADOA 3.0 includes dedicated indicator catalogues for 7 sectors:</p>
+<table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Representative Sector-Specific Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Financial Services</strong></td>
+<td>Portfolio-at-risk ratio; deposit mobilization; financial inclusion index change</td>
+</tr>
+<tr>
+<td><strong>Energy</strong></td>
+<td>Levelized cost of energy (LCOE); SAIDI/SAIFI reliability; electrification rate change (%)</td>
+</tr>
+<tr>
+<td><strong>Transport</strong></td>
+<td>Vehicle operating cost reduction (%); freight volume (t/year); road safety fatalities per 100km</td>
+</tr>
+<tr>
+<td><strong>Water</strong></td>
+<td>Non-revenue water reduction (%); water quality compliance rate (%); coverage expansion (km of pipes)</td>
+</tr>
+<tr>
+<td><strong>Agriculture</strong></td>
+<td>Smallholder yield improvement (t/ha); post-harvest losses reduction (%); market price volatility reduction</td>
+</tr>
+<tr>
+<td><strong>Manufacturing</strong></td>
+<td>Capacity utilization (%); export volume growth; resource efficiency improvement</td>
+</tr>
+<tr>
+<td><strong>Digital Infrastructure</strong></td>
+<td>Broadband penetration increase (%); digital services adoption (#); latency reduction (ms)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unique features:</strong></p>
+<ul>
+<li>Continuous 1–10 scoring replaces older 6-point discrete scale, enabling more nuanced differentiation</li>
+<li>Explicit context-risk adjustment: identical outcomes in a &quot;Highly Constrained&quot; country earn a higher score</li>
+<li>Integrated theory-of-change assessment — evaluators must trace the causal pathway from project to outcome</li>
+<li>Regional integration is a standalone outcome category (important for pan-African mandate)</li>
+<li>ADOA-RO 2.0 sub-framework for Regional Operations applies additional cross-border integration criteria</li>
+</ul>
+<p><strong>Source documents:</strong> <em>ADOA 3.0 General Framework</em> (AfDB); <em>ADOA Annual Report 2024</em> (portfolio implementation data).</p>
+<hr>
+<h2 id="10-hipso--harmonized-indicators-for-private-sector-operations">10. HIPSO — Harmonized Indicators for Private Sector Operations</h2>
+<p><strong>Framework:</strong> HIPSO (IFI Partnership)
+<strong>Structure:</strong> Sector indicator catalogues + cross-cutting thematic indicators
+<strong>Coverage:</strong> 14 sectors + cross-cutting categories (Gender, Jobs, Environment, Community) · ~177 indicators
+<strong>Type:</strong> Voluntary harmonized definitions adopted by IFC, EBRD, AfDB, ADB, IDB, EIB, IsDB, and others for private sector operations reporting</p>
+<h3 id="how-it-works">How it works</h3>
+<p>HIPSO is a joint initiative of the International Finance Institution Partnership that defines a common set of output and outcome indicators for private sector investment operations. Unlike AIMM or TOMS, HIPSO defines <strong>what</strong> to measure, not how to score it. The goal is cross-MDB comparability: institutions use the same indicator IDs and definitions so portfolios can be compared. All indicators are mapped to relevant UN SDG targets.</p>
+<h3 id="sector-specific-indicators">Sector-Specific Indicators</h3>
+<p><strong>Energy (EN)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EN-01</td>
+<td>Energy Generated</td>
+<td>MWh</td>
+</tr>
+<tr>
+<td>EN-02</td>
+<td>Renewable Energy Generated</td>
+<td>MWh</td>
+</tr>
+<tr>
+<td>EN-03</td>
+<td>New Connections to Energy</td>
+<td># connections</td>
+</tr>
+<tr>
+<td>EN-04</td>
+<td>Frequency of Power Outages (SAIFI)</td>
+<td>#</td>
+</tr>
+<tr>
+<td>EN-05</td>
+<td>Length of Power Outages (SAIDI)</td>
+<td>hours</td>
+</tr>
+<tr>
+<td>EN-06</td>
+<td>Power System Commercial Losses</td>
+<td>%</td>
+</tr>
+<tr>
+<td>EN-07</td>
+<td>Power System Technical Losses</td>
+<td>%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Agribusiness (AG)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AG-01</td>
+<td>Average Agricultural Yield</td>
+<td>t/ha</td>
+</tr>
+<tr>
+<td>AG-02</td>
+<td>Farmers Reached</td>
+<td>#</td>
+</tr>
+<tr>
+<td>AG-03</td>
+<td>Value of Total Sales</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>AG-04</td>
+<td>Volume of Total Sales</td>
+<td># units/tons/liters</td>
+</tr>
+<tr>
+<td>AG-05</td>
+<td>Value of Export Sales</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>AG-06</td>
+<td>Volume of Export Sales</td>
+<td># units/tons/liters</td>
+</tr>
+<tr>
+<td>AG-07</td>
+<td>Volume of Production</td>
+<td>varies</td>
+</tr>
+<tr>
+<td>AG-08</td>
+<td>Value of Purchases from Domestic Farmers</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>AG-09</td>
+<td>Volume of Purchases from Domestic Farmers</td>
+<td>units</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Education (ED)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ED-01</td>
+<td>Students Enrolled</td>
+<td>#</td>
+</tr>
+<tr>
+<td>ED-02</td>
+<td>Female Students Enrolled</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Health (HE)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HE-01</td>
+<td>Patients Served</td>
+<td>#</td>
+</tr>
+<tr>
+<td>HE-02</td>
+<td>Female Patients Served</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Housing (HO)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HO-01</td>
+<td>Improved Dwellings</td>
+<td>#</td>
+</tr>
+<tr>
+<td>HO-02</td>
+<td>New Dwellings</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Industry &amp; Services (IN)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IN-01</td>
+<td>Domestic Purchases</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>IN-02</td>
+<td>Export Sales</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>IN-03</td>
+<td>Total Sales</td>
+<td># &amp; currency</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Information &amp; Communication Technologies (IT)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Sub-sector</th>
+<th>Key Indicators</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MNO / Satellite</td>
+<td>Fixed voice subs; mobile subs; download speed (IT-01, IT-02, IT-20)</td>
+<td># / Mbps</td>
+</tr>
+<tr>
+<td>Fixed Broadband</td>
+<td>Fixed data subs; homes/firms passed; km lines new/upgraded (IT-03, IT-10, IT-13, IT-14)</td>
+<td># / km</td>
+</tr>
+<tr>
+<td>Data Centers</td>
+<td>Capacity sold % total/wholesale (IT-07, IT-08, IT-11)</td>
+<td>% / MW</td>
+</tr>
+<tr>
+<td>Tower / Cell</td>
+<td>New/upgraded sites; tenancy ratio (IT-15, IT-16, IT-17)</td>
+<td>#</td>
+</tr>
+<tr>
+<td>Submarine Cable</td>
+<td>Capacity installed (IT-12)</td>
+<td>TB/s</td>
+</tr>
+<tr>
+<td>Pricing</td>
+<td>Price of cheapest plan (IT-19)</td>
+<td>USD PPP</td>
+</tr>
+<tr>
+<td>Disruptive Digital</td>
+<td>Users, firms reached; transaction values (IT-21–IT-30)</td>
+<td># / currency</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mining (MI)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MI-01</td>
+<td>Volume of Industrial Output</td>
+<td>tons</td>
+</tr>
+<tr>
+<td>MI-02</td>
+<td>Volume of Minerals/Metals from Local/Regional Suppliers</td>
+<td>tons</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Oil &amp; Gas (OG)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OG-01</td>
+<td>Oil/Gas Delivered to End-Customers</td>
+<td>m³</td>
+</tr>
+<tr>
+<td>OG-02</td>
+<td>Gas Distribution Connections</td>
+<td># connections</td>
+</tr>
+<tr>
+<td>OG-03</td>
+<td>LNG/CNG Stations</td>
+<td># stations</td>
+</tr>
+<tr>
+<td>OG-04</td>
+<td>Length of Service Interruptions</td>
+<td>hours</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Private Equity &amp; Investment Funds (PE)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE-01/02</td>
+<td>Direct Jobs FTE — operations &amp; construction phase</td>
+<td># FTE</td>
+</tr>
+<tr>
+<td>PE-03/04</td>
+<td>Active Fund Investments (total / by sector)</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PE-05/06</td>
+<td>Realized Fund Investments (total / by sector)</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PE-07/08</td>
+<td>Amount of Active Fund Investments (total / by sector)</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>PE-09/10</td>
+<td>Amount of Realized Fund Investments (total / by sector)</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>PE-11</td>
+<td>Payment to Government</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>PE-12</td>
+<td>EBITDA</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>PE-13</td>
+<td>Total Sales</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>PE-14</td>
+<td>Domestic Purchases</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>PE-15</td>
+<td>Export Sales</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>PE-16/17</td>
+<td>Direct Jobs in Intermediary (total / female)</td>
+<td># FTE</td>
+</tr>
+<tr>
+<td>PE-18/19</td>
+<td>Investment Committee Members (total / female)</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PSD — Firm Level (PF)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PF-01</td>
+<td>Business Innovation</td>
+<td>Yes/No + commentary</td>
+</tr>
+<tr>
+<td>PF-02</td>
+<td>Market Linkages Improved or Expanded</td>
+<td>Yes/No + commentary</td>
+</tr>
+<tr>
+<td>PF-03</td>
+<td>Market Share Increased</td>
+<td>Yes/No + commentary</td>
+</tr>
+<tr>
+<td>PF-04</td>
+<td>New Market Entry</td>
+<td>Yes/No + commentary</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PSD — Market Level (PM)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PM-01</td>
+<td>Entry of New Firms into Market</td>
+<td>Yes/No + commentary</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Transportation (TR)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TR-01</td>
+<td>Passengers Using Infrastructure</td>
+<td>#</td>
+</tr>
+<tr>
+<td>TR-02</td>
+<td>Daily Traffic (Non-Urban / National Road)</td>
+<td>traffic units/year</td>
+</tr>
+<tr>
+<td>TR-03</td>
+<td>Available Infrastructure for Non-Motorized Traffic</td>
+<td>km</td>
+</tr>
+<tr>
+<td>TR-04</td>
+<td>Toll Price</td>
+<td>currency/km</td>
+</tr>
+<tr>
+<td>TR-05</td>
+<td>Freight Tariff</td>
+<td>currency/ton</td>
+</tr>
+<tr>
+<td>TR-06</td>
+<td>Containers Handled</td>
+<td>#</td>
+</tr>
+<tr>
+<td>TR-07</td>
+<td>Bulk Cargo Handled</td>
+<td>tons</td>
+</tr>
+<tr>
+<td>TR-08</td>
+<td>Berth Moves per Hour</td>
+<td>moves/hour</td>
+</tr>
+<tr>
+<td>TR-09</td>
+<td>Turnaround Time</td>
+<td>hours</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Water, Waste &amp; Sanitation (WA)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WA-01</td>
+<td>Connections to Water Services</td>
+<td># connections</td>
+</tr>
+<tr>
+<td>WA-02</td>
+<td>Connections to Wastewater Services</td>
+<td># connections</td>
+</tr>
+<tr>
+<td>WA-03</td>
+<td>Period of Water Supply</td>
+<td>hours/day</td>
+</tr>
+<tr>
+<td>WA-04</td>
+<td>Water Pressure</td>
+<td>hours/liter fill</td>
+</tr>
+<tr>
+<td>WA-05</td>
+<td>Non-Revenue Water — Commercial Loss</td>
+<td>%</td>
+</tr>
+<tr>
+<td>WA-06</td>
+<td>Non-Revenue Water — Technical Loss</td>
+<td>%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Financial Intermediation (FI)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FI-01</td>
+<td>Loans Outstanding</td>
+<td>#</td>
+</tr>
+<tr>
+<td>FI-02</td>
+<td>Value of Loans Outstanding</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>FI-03</td>
+<td>Active Borrowers/Clients</td>
+<td>#</td>
+</tr>
+<tr>
+<td>FI-04</td>
+<td>Average Tenor of Loans</td>
+<td>months</td>
+</tr>
+<tr>
+<td>FI-05</td>
+<td>Deposit Transaction Accounts</td>
+<td>#</td>
+</tr>
+<tr>
+<td>FI-06</td>
+<td>Merchant Acceptance Points (POS)</td>
+<td>#</td>
+</tr>
+<tr>
+<td>FI-07</td>
+<td>Access to Digital Payment Services</td>
+<td>#</td>
+</tr>
+<tr>
+<td>FI-08</td>
+<td>Value of Non-Cash Transactions</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>FI-09–13</td>
+<td>Loans to women, MSMEs, agriculture, housing (supplemental)</td>
+<td># / currency</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cross-Cutting — All Infrastructure Services (CC)</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC-01</td>
+<td>Meter Penetration (electricity, gas, water customers)</td>
+<td>%</td>
+</tr>
+<tr>
+<td>CC-02</td>
+<td>Direct Jobs Supported</td>
+<td># FTE</td>
+</tr>
+</tbody>
+</table>
+<h3 id="thematic-area-indicators">Thematic Area Indicators</h3>
+<p><strong>Gender — Ownership and Leadership</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TA-01</td>
+<td>Women in Senior Management</td>
+<td>#</td>
+</tr>
+<tr>
+<td>TA-02</td>
+<td>Women on the Board</td>
+<td>#</td>
+</tr>
+<tr>
+<td>TA-03</td>
+<td>Female Investment Committee Members</td>
+<td>#</td>
+</tr>
+<tr>
+<td>TA-04</td>
+<td>Female-Founded Enterprises</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Gender — Employment</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TA-05</td>
+<td>Female Direct Jobs Supported (Operations &amp; Maintenance)</td>
+<td># FTE</td>
+</tr>
+<tr>
+<td>TA-06</td>
+<td>Female Construction Jobs (Temporary)</td>
+<td># FTE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Jobs</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TA-07</td>
+<td>Direct Employment — Construction Phase</td>
+<td># FTE</td>
+</tr>
+<tr>
+<td>TA-08</td>
+<td>Direct Employment — Operations &amp; Maintenance</td>
+<td># FTE</td>
+</tr>
+<tr>
+<td>TA-09</td>
+<td>Direct Jobs Created (Operations &amp; Maintenance)</td>
+<td># FTE</td>
+</tr>
+<tr>
+<td>TA-10</td>
+<td>Jobs Created by the Investment</td>
+<td># FTE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Environment and Climate</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TA-11</td>
+<td>GHG Emissions</td>
+<td>tCO2e/year</td>
+</tr>
+<tr>
+<td>TA-12</td>
+<td>GHG Emissions Sequestration</td>
+<td>tCO2/year</td>
+</tr>
+<tr>
+<td>TA-13</td>
+<td>Water Consumption</td>
+<td>m³</td>
+</tr>
+<tr>
+<td>TA-14</td>
+<td>Wastewater Treatment</td>
+<td>m³</td>
+</tr>
+<tr>
+<td>TA-15</td>
+<td>Energy Consumption</td>
+<td>kWh or MJ</td>
+</tr>
+<tr>
+<td>TA-16</td>
+<td>Land Use</td>
+<td>ha</td>
+</tr>
+<tr>
+<td>TA-17</td>
+<td>Sustainable Management of Natural Resources</td>
+<td>varies</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Community Contributions</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TA-18</td>
+<td>Community Development Contributions</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>TA-19</td>
+<td>Payment to Government</td>
+<td>currency</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sdg-alignment-key-mappings">SDG Alignment (key mappings)</h3>
+<table>
+<thead>
+<tr>
+<th>HIPSO Sector / ID</th>
+<th>Primary SDG Targets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AG-01/02 (Agribusiness)</td>
+<td>SDG-2 (Zero Hunger) T2.3, T2.4; SDG-8; SDG-17</td>
+</tr>
+<tr>
+<td>ED-01 (Education)</td>
+<td>SDG-1 T1.4; SDG-4 T4.1–4.3; SDG-10</td>
+</tr>
+<tr>
+<td>ED-02 (Female students)</td>
+<td>+ SDG-5 T5.1</td>
+</tr>
+<tr>
+<td>EN-02 (Renewable energy)</td>
+<td>SDG-7 T7.2; SDG-13</td>
+</tr>
+<tr>
+<td>HE-01 (Patients served)</td>
+<td>SDG-1 T1.4; SDG-3 T3.8; SDG-10</td>
+</tr>
+<tr>
+<td>HE-02 (Female patients)</td>
+<td>+ SDG-5 T5.1, T5.6</td>
+</tr>
+<tr>
+<td>HO-01/02 (Housing)</td>
+<td>SDG-1; SDG-10; SDG-11 T11.1</td>
+</tr>
+<tr>
+<td>IT-01–03 (ICT)</td>
+<td>SDG-1; SDG-9 T9.C; SDG-17 T17.8</td>
+</tr>
+<tr>
+<td>IT-03 (Mobile, gender)</td>
+<td>+ SDG-5 T5.B</td>
+</tr>
+<tr>
+<td>TA-05/06 (Female jobs)</td>
+<td>SDG-5 T5.5; SDG-8 T8.5; SDG-10 T10.2</td>
+</tr>
+<tr>
+<td>TA-07–10 (Employment)</td>
+<td>SDG-8 T8.5; SDG-10 T10.2</td>
+</tr>
+<tr>
+<td>TA-11/12 (GHG)</td>
+<td>SDG-13 T13.A</td>
+</tr>
+<tr>
+<td>TA-13/14 (Water/Wastewater)</td>
+<td>SDG-6; SDG-9 T9.4; SDG-12</td>
+</tr>
+<tr>
+<td>TA-15 (Energy consumption)</td>
+<td>SDG-7 T7.3; SDG-9; SDG-12</td>
+</tr>
+<tr>
+<td>TA-16/17 (Land/NR)</td>
+<td>SDG-2 T2.4; SDG-12; SDG-15 T15.1–15.2</td>
+</tr>
+<tr>
+<td>TA-18/19 (Payments)</td>
+<td>SDG-17 T17.1</td>
+</tr>
+<tr>
+<td>TR-01–03 (Transport)</td>
+<td>SDG-1 T1.4; SDG-9 T9.1; SDG-11 T11.2</td>
+</tr>
+<tr>
+<td>WA-07 (Wastewater)</td>
+<td>SDG-6 T6.3; SDG-11 T11.6; SDG-14 T14.1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unique feature:</strong> HIPSO provides a shared measurement language across MDBs — no proprietary scoring. Indicators are output/outcome-focused, institution-agnostic, and SDG-mapped. Any MDB reporting on private sector operations can use HIPSO IDs directly, enabling cross-portfolio benchmarking. EBRD, IFC, AfDB, ADB, IDB, EIB, and IsDB are all IFI Partnership members.</p>
+<p><strong>Source documents:</strong> <code>HIPSO_framework_completed/</code> — sector-specific indicator definition sheets (Energy, Agribusiness, Education, Health, Housing, Industry &amp; Services, ICT, Mining, Oil/Gas, PE &amp; Investment Funds, PSD Firm/Market Level, Transportation, Water/Waste/Sanitation, Financial Intermediation, Cross-Cutting, Thematic Areas); <code>HIPSO Mapping.pdf</code> (SDG alignment); indicators.ifipartnership.org</p>
+<hr>
+<h2 id="cross-framework-indicator-comparison">Cross-Framework Indicator Comparison</h2>
+<blockquote>
+<p>This table shows how each framework measures the same development themes. Cells show the specific metric or approach used.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>EBRD/ATQ</th>
+<th>IFC/AIMM</th>
+<th>FAST-Infra</th>
+<th>ADB/DMF</th>
+<th>AIIB/RMF</th>
+<th>IDB</th>
+<th>IsDB</th>
+<th>NDB</th>
+<th>AfDB/ADOA</th>
+<th>HIPSO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GHG / Climate</strong></td>
+<td>tCO2e (per quality); green share (% GDP)</td>
+<td>tCO2e avoided; carbon NPV integration</td>
+<td>Scope 1/2/3 (E2.G2K.1-3); tCO2e avoided (E2.Q8W); TCFD-aligned climate risk (R5.1JT/R5.R8S)</td>
+<td>Climate finance ($M)</td>
+<td>tCO2e; ≥50% climate finance</td>
+<td>tCO2e; MW renewable</td>
+<td>tCO2e; green finance ($M)</td>
+<td>GWh; tCO2e; MW</td>
+<td>tCO2e/year; MW added</td>
+<td>TA-11 GHG emissions (tCO2e/y); TA-12 sequestration; EN-02 renewable MWh</td>
+</tr>
+<tr>
+<td><strong>Biodiversity</strong></td>
+<td>Threatened species share (%)</td>
+<td>Qualitative (ESG sustainability)</td>
+<td>Net gains/no net loss (E1.8BR); risk assessment (E1.UM1); cumulative impact (E1.QW4); expenditure (E1.4OO.3.A/.B)</td>
+<td>—</td>
+<td>Land restored (ha)</td>
+<td>Land/marine ecosystems protected (ha)</td>
+<td>—</td>
+<td>Environmental protection (thematic)</td>
+<td>—</td>
+<td>TA-16 land use (ha); TA-17 sustainable NR management — no dedicated biodiversity indicator</td>
+</tr>
+<tr>
+<td><strong>Jobs</strong></td>
+<td>Labour productivity (GDP PPP/worker); NEET rate (%)</td>
+<td>FTE direct + induced (modelled)</td>
+<td>Female workers % (S6.3WY); local workforce % (S8.GC2); people with secure employment (S8.I8Q)</td>
+<td>Staff trained (#)</td>
+<td>Employee diversity (%)</td>
+<td>FTE</td>
+<td>Youth jobs (#)</td>
+<td>Jobs created (#)</td>
+<td>Jobs created; firm count</td>
+<td>CC-02 direct FTE; TA-07–10 FTE by phase (construction / O&amp;M / net new)</td>
+</tr>
+<tr>
+<td><strong>Gender</strong></td>
+<td>Gender participation gap; Women's Law score</td>
+<td>Inclusion bonus; SFB-specific</td>
+<td>GBVH assessment (S6.LV7); Gender Action Plan (S6.Z5Q); board representation (S6.LS4.1); female workers % (S6.3WY)</td>
+<td>Effective Gender Mainstreaming (%)</td>
+<td>Disaggregated by gender (all PDOs)</td>
+<td>% projects with gender outcomes</td>
+<td>Female beneficiaries (#)</td>
+<td>—</td>
+<td>Female beneficiaries (#)</td>
+<td>TA-01–04 board/mgmt/IC/founders (#); TA-05/06 female FTE; HE-02/ED-02 female beneficiaries</td>
+</tr>
+<tr>
+<td><strong>Water</strong></td>
+<td>Safe water access (%); water stress index</td>
+<td>Access, quality, affordability</td>
+<td>Water usage (E3.QK5, m³/year); availability assessment (E3.BO2); wastewater managed (E4.7BL)</td>
+<td>Residents with improved supply (#)</td>
+<td>Safely managed water (# disaggregated)</td>
+<td>—</td>
+<td>Households with access (#)</td>
+<td>People with access; m³/day</td>
+<td>Non-revenue water (%); coverage expansion</td>
+<td>WA-01/02 connections (#); WA-05/06 NRW %; TA-13 consumption (m³); TA-14 wastewater treated (m³)</td>
+</tr>
+<tr>
+<td><strong>Governance / Anti-corruption</strong></td>
+<td>Corruption Perception Index; government effectiveness</td>
+<td>Qualitative (ESG standards)</td>
+<td>Anti-corruption system (G11.PT2); corruption risk assessment (G11.4UO); whistleblowing (G11.PV5); incidents count (G11.4UQ); TNFD disclosure (G12.2AG); beneficial owners (G12.W7L)</td>
+<td>—</td>
+<td>—</td>
+<td>Transparency indicators</td>
+<td>Islamic ethics layer</td>
+<td>—</td>
+<td>Governance risk; disclosure score</td>
+<td>TA-18/19 community contributions and payments to government — no direct anti-corruption indicator</td>
+</tr>
+<tr>
+<td><strong>Private capital</strong></td>
+<td>Credit to private sector (% GDP)</td>
+<td>Market Creation score ($M mobilized)</td>
+<td>—</td>
+<td>PCM ($M)</td>
+<td>PCM ($M); 50% target by 2030</td>
+<td>Capital mobilized ($M)</td>
+<td>—</td>
+<td>PCM ($M)</td>
+<td>Co-investors mobilized ($M); additionality score</td>
+<td>FI-01–13 (lending volume, borrowers); PE-03–15 (fund size, realized returns, payments)</td>
+</tr>
+<tr>
+<td><strong>Unique scoring feature</strong></td>
+<td>ATQ country gap multiplier</td>
+<td>Gap × Intensity matrix; likelihood discount</td>
+<td>Permanent alphanumeric IDs; Baseline + Positive Contribution split; 8 Minimum Safeguards gate; NbS as qualifying element across all criteria</td>
+<td>Gender mainstreaming mandate (OECD-DAC)</td>
+<td>7 evaluation criteria incl. AIIB Work Quality</td>
+<td>DEO annual public reporting</td>
+<td>Maqasid al-Shari'ah ethical layer</td>
+<td>BRICS + emerging market mandate</td>
+<td>Context-risk adjustment (Constrained/Unconstrained)</td>
+<td>No scoring model — common definitions only; enables cross-MDB portfolio comparability; SDG-mapped</td>
+</tr>
+<tr>
+<td><strong>Sector depth</strong></td>
+<td>6 qualities × ATQ; 6 sector contexts</td>
+<td>20+ SFBs with unique benchmarks</td>
+<td>Universal (all infra sectors); 14 criteria; 19 time-series pairs</td>
+<td>4 output sectors</td>
+<td>5 PDO sectors + 7 ESS themes</td>
+<td>3 pillars</td>
+<td>4 indicator sets</td>
+<td>5 thematic priorities</td>
+<td>7 sector-specific catalogues</td>
+<td>14 sectors + cross-cutting + 4 thematic areas; ~177 indicators</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
