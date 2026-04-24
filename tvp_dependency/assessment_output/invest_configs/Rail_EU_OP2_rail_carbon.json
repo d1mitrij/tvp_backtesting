@@ -1,0 +1,13 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Rail_EU_OP2/carbon",
+  "results_suffix": "Rail_EU_OP2",
+  "lulc_cur_path": "modeled_input_data/invest_inputs/europe/land_use_land_cover.tif",
+  "lulc_fut_path": "modeled_input_data/invest_inputs/europe/land_use_with_rail_corridor.tif",
+  "carbon_pools_path": "modeled_input_data/invest_inputs/europe/carbon_pools.csv",
+  "calc_sequestration": true,
+  "lulc_redd_path": null,
+  "price_per_metric_ton_of_c": 50,
+  "discount_rate": 5,
+  "lulc_fut_year": 2026,
+  "_model_name": "rail_carbon"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  co2_emissions.xml — GCAM query: CO2 emissions from electricity generation
+  ==========================================================================
+  Queries CO2 emissions by technology/subsector in the electricity sector.
+
+  Output unit: Mt CO2/yr.
+
+  The iamc_bridge.py maps these to IAMC:
+    subsector "coal"  → Emissions|CO2|Energy|Supply|Electricity|Coal
+    subsector "gas"   → Emissions|CO2|Energy|Supply|Electricity|Gas
+    fossil sum        → Emissions|CO2|Energy|Supply|Electricity
+
+  Note: GCAM reports CO2 in Mt CO2 (million metric tonnes).
+  Some versions report in TgC (teragrams of carbon); check GCAM version
+  and apply × 44/12 conversion if necessary.
+-->
+<queries title="CO2 Emissions from Electricity">
+
+  <query title="CO2 emissions elec by subsector">
+    <axis1 name="subsector">../subsector[@name]</axis1>
+    <axis2 name="Year">../period[@year]</axis2>
+    <xPath buildList="true" dataName="CO2-MtCO2" group="false" sumAll="false">
+      *[@type='sector' and @name='electricity']
+      /subsector
+      /technology
+      /period[@year]
+      /ghg[@name='CO2']
+      /emissions/@value
+    </xPath>
+    <comments/>
+  </query>
+
+</queries>

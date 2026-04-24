@@ -1,0 +1,145 @@
+# ─── SSP5-8.5 — Fossil-Fueled Development ────────────────────────────────────
+# Narrative: rapid economic growth globally, driven by fossil fuels and high
+# investment in human capital (education and health). Very high energy demand;
+# late emissions peak; high adaptive capacity but severe physical climate risks.
+# ~4–5 °C trajectory.
+#
+# Project links:
+#   LATAM Proj_001 ($250M, 5 M patients) and Africa Proj_002 ($25M) reflect
+#   the high human-capital investment in this pathway — health and education
+#   spending is a hallmark of SSP5 even in developing regions.
+#   Hydro retrofits are deployed (economic growth enables investment), but coal
+#   and gas capacity expands massively to meet rapidly growing demand.
+#   Rail_EU_DEV is one of many large European infrastructure projects in an
+#   era of high growth and high energy consumption.
+#
+# Key SSP5 distinction from SSP3:
+#   SSP3 = fragmented (weak institutions, slow growth everywhere)
+#   SSP5 = globalised fossil growth (strong institutions, high growth,
+#          coordinated fossil investment; renewables grow but fossil dominates)
+#
+# Merges with base.yaml via Model.from_yaml("base.yaml", "ssp5.yaml").
+
+# ── Electricity demand [PJ/yr] — very high growth everywhere ──────────────
+commodities:
+  - id: ELC
+    include_in_joint_renewable_target:
+      "*":
+        "*": true
+    demand_annual:
+      Africa:
+        "2020": 2500
+        "2025": 3350
+        "2030": 4550
+        "2035": 6100
+        "2040": 8100
+        "2045": 10600
+        "2050": 13800
+      Asia:
+        "2020": 10000
+        "2025": 13800
+        "2030": 18800
+        "2035": 25000
+        "2040": 32500
+        "2045": 41000
+        "2050": 51000
+      Europe:
+        "2020": 12000
+        "2025": 13100
+        "2030": 14700
+        "2035": 16800
+        "2040": 19000
+        "2045": 21600
+        "2050": 24600
+      LATAM:
+        "2020": 4500
+        "2025": 5700
+        "2030": 7400
+        "2035": 9600
+        "2040": 12300
+        "2045": 15700
+        "2050": 19800
+
+# ── CO2 limits — very loose, consistent with 8.5 W/m² forcing ────────────
+# All regions are resource-rich and fossil-energy-dependent through 2050.
+# Limits set at multiples of business-as-usual to avoid infeasibility while
+# reflecting the near-total absence of binding climate policy.
+# New coal and gas plants are built at scale in Africa and Asia.
+impacts:
+  - id: CO2
+    penalty:
+      Africa: {"*": 3}
+      Asia:   {"*": 3}
+      Europe: {"*": 8}
+      LATAM:  {"*": 4}
+    constraint_annual:
+      Africa:
+        "2020": 3000
+        "2025": 5000
+        "2030": 8000
+        "2035": 12000
+        "2040": 17000
+        "2045": 23500
+        "2050": 32000
+      Asia:
+        "2020": 13000
+        "2025": 18500
+        "2030": 26000
+        "2035": 36000
+        "2040": 48000
+        "2045": 63000
+        "2050": 80000
+      Europe:
+        "2020": 6000
+        "2025": 8500
+        "2030": 12000
+        "2035": 16500
+        "2040": 22000
+        "2045": 29000
+        "2050": 37000
+      LATAM:
+        "2020": 2500
+        "2025": 3800
+        "2030": 6000
+        "2035": 9200
+        "2040": 13500
+        "2045": 19500
+        "2050": 27000
+
+# ── Renewable targets — minimal policy mandate; economics-only ────────────
+# Some renewables are cost-competitive by 2040–2050 even without policy,
+# but new fossil plants also continue to be built. Targets are set at the
+# floor consistent with existing hydro residual capacity.
+renewable_production_target:
+  Africa:
+    "2020": 0.18
+    "2025": 0.18
+    "2030": 0.19
+    "2035": 0.19
+    "2040": 0.20
+    "2045": 0.21
+    "2050": 0.22
+  Asia:
+    "2020": 0.15
+    "2025": 0.15
+    "2030": 0.16
+    "2035": 0.17
+    "2040": 0.18
+    "2045": 0.19
+    "2050": 0.20
+  Europe:
+    "2020": 0.30
+    "2025": 0.31
+    "2030": 0.33
+    "2035": 0.35
+    "2040": 0.37
+    "2045": 0.39
+    "2050": 0.42
+  LATAM:
+    "2020": 0.42
+    "2025": 0.42
+    "2030": 0.43
+    "2035": 0.43
+    "2040": 0.44
+    "2045": 0.45
+    "2050": 0.46

@@ -1,0 +1,10 @@
+project_id,region,sector_key,wrf_physical,wrf_regulatory,wrf_reputational,wrf_composite,wrf_high_risk,brf_species_threat,brf_ecosystem,brf_protected_areas,brf_composite,brf_high_risk,overall_high_risk
+Proj_001,latam,human_health_activities,3.788,2.875,3.6,3.477,True,4.74,3.45,3.933,4.087,True,True
+Proj_002,africa,human_health_activities,4.087,2.8,3.15,3.513,True,3.96,3.35,3.367,3.598,True,True
+Proj_003,europe,human_health_activities,2.774,3.75,4.0,3.312,False,2.56,3.025,3.567,2.974,False,False
+Hydro_AF,africa,electric_power_generation_hydro,4.67,3.08,3.15,3.889,True,4.95,3.35,3.367,3.994,True,True
+Hydro_AS,asia,electric_power_generation_hydro,4.97,3.438,3.75,4.266,True,5.0,3.55,4.067,4.259,True,True
+Hydro_EU,europe,electric_power_generation_hydro,3.17,4.125,4.0,3.622,True,3.2,3.025,3.567,3.231,False,True
+Rail_EU_DEV,europe,rail_transport,2.906,3.75,4.0,3.378,False,2.56,3.479,3.567,3.133,False,False
+Rail_EU_OP1,europe,rail_transport,2.906,3.75,4.0,3.378,False,2.56,3.479,3.567,3.133,False,False
+Rail_EU_OP2,europe,rail_transport,2.906,3.75,4.0,3.378,False,2.56,3.479,3.567,3.133,False,False

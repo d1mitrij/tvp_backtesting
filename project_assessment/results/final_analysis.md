@@ -371,7 +371,89 @@ Cross-cutting findings from combining all three analytical passes:
 | ENCORE materiality | ENCORE tool v2.0 | 2023 |
 | WWF Risk Filters | WRF 2.0 + BRF 1.0 | 2022 |
 | Financial inputs | Project finance CSVs | 2025 |
+| GHG value factor | WifOR Institute — Nordhaus DICE / Paris update | 2019 |
+| Water value factor | WifOR Institute — Blue water scarcity damage cost | 2020 |
+| Employment value factor | WifOR Institute — TrainingHours wage-based | 2020 |
 
 Tiers computed: 0 to 10. Tiers 0–2 in individual tables; tiers 3–10 aggregated.
 Column A spectral radius ≈ 0.52 → geometric decay; tiers >8 contribute <0.1% of signal.
 EUR/USD rate: 1.08 (applied to Rail CAPEX inputs).
+
+---
+
+## 7. WifOR Monetised Impact Statement
+
+Supply-chain physical quantities are converted to monetary impact estimates
+using WifOR Institute value factors, enabling a single-currency comparison
+of environmental costs and social benefits across all projects.
+
+**Conversion formulas:**
+
+| Stressor | Conversion | Value factor |
+|----------|-----------|--------------|
+| GHG (tCO₂e) | × 1,000 kg/t × coeff [USD/kg] | Social cost of carbon — Nordhaus DICE baseline (globally uniform) |
+| Water (1,000 m³) | × 1,000 m³ × coeff [USD/m³] | Blue water depletion damage — country-specific scarcity weighting |
+| Employment (FTE) | × 1,880 h/yr × coeff [USD/h] | Workplace training benefit — country- and sector-specific wage base |
+
+**Country and sector mappings applied:**
+
+| Project region | ISO-3 country | WifOR country used |
+|---------------|--------------|-------------------|
+| LATAM | BRA | BRA |
+| Africa | NGA | NGA |
+| Asia | IND | IND |
+| Europe | DEU | DEU |
+
+### 7.1 Value factor coefficients by project
+
+| Project | Country | NACE | GHG coeff (USD/kg) | GHG Paris (USD/kg) | Water (USD/m³) | Training (USD/h) |
+|---------|---------|------|------------------|-------------------|---------------|-----------------|
+| Hydro_AF | NGA | D35 | -0.0637 | -0.0586 | -1.7481 | 5.7773 |
+| Hydro_AS | IND | D35 | -0.0637 | -0.0586 | -20.6049 | 54.9817 |
+| Hydro_EU | DEU | D35 | -0.0637 | -0.0586 | -0.2291 | 447.7946 |
+| Proj_001 | BRA | Q | -0.0637 | -0.0586 | -0.9938 | 112.2378 |
+| Proj_002 | NGA | Q | -0.0637 | -0.0586 | -1.7481 | 5.0354 |
+| Proj_003 | DEU | Q | -0.0637 | -0.0586 | -0.2291 | 84.9387 |
+| Rail_EU_DEV | DEU | F | -0.0637 | -0.0586 | -0.2291 | 111.6122 |
+| Rail_EU_OP1 | DEU | H49 | -0.0637 | -0.0586 | -0.2291 | 121.4724 |
+| Rail_EU_OP2 | DEU | H49 | -0.0637 | -0.0586 | -0.2291 | 121.4724 |
+
+> GHG social cost of carbon is globally uniform (Nordhaus DICE, 2019 USD).
+> Water and training coefficients are country-specific; training also varies by NACE sector.
+
+### 7.2 Monetised impact per project (M USD, tiers 0–10)
+
+Negative values = environmental damage costs. Positive values = social benefits.
+
+| Project | Region | [−] GHG cost | [−] GHG cost (Paris) | [−] Water cost | [+] Employment benefit | Net impact |
+|---------|--------|------------|---------------------|--------------|----------------------|-----------|
+| Hydro_AF | Africa | -1.29 M | -1.19 M | -0.23 M | 8.61 M | **7.09 M** |
+| Hydro_AS | Asia | -6.13 M | -5.65 M | -13.06 M | 377.41 M | **358.21 M** |
+| Hydro_EU | Europe | -0.05 M | -0.05 M | -0.00 M | 23.67 M | **23.62 M** |
+| Proj_001 | LATAM | -8.29 M | -7.63 M | -1.01 M | 1,186.56 M | **1,177.26 M** |
+| Proj_002 | Africa | -1.01 M | -0.93 M | -0.20 M | 6.38 M | **5.18 M** |
+| Proj_003 | Europe | -1.70 M | -1.56 M | -0.05 M | 170.79 M | **169.04 M** |
+| Rail_EU_DEV | Europe | -50.14 M | -46.17 M | -1.22 M | 5,841.08 M | **5,789.72 M** |
+| Rail_EU_OP1 | Europe | -0.00 M | -0.00 M | -0.00 M | 0.38 M | **0.38 M** |
+| Rail_EU_OP2 | Europe | -0.00 M | -0.00 M | -0.00 M | 0.26 M | **0.26 M** |
+
+**Portfolio totals:** GHG cost -68.6 M USD | Water cost -15.8 M USD | Employment benefit 7,615.1 M USD | **Net 7,530.8 M USD**
+
+### 7.3 Key findings
+
+- **Highest GHG damage cost:** Rail_EU_DEV (Europe) — -50.1 M USD. GHG social cost of carbon is globally uniform at -0.0637 USD/kg CO₂e (Nordhaus DICE baseline), so the ranking mirrors the supply-chain GHG footprint.
+- **Highest water damage cost:** Hydro_AS (Asia) — -13.1 M USD. Driven by the country-specific scarcity factor (-20.6049 USD/m³ for IND). Asian and African projects face substantially higher water damage costs than European counterparts due to greater physical water scarcity.
+- **Highest employment benefit:** Rail_EU_DEV (Europe) — 5,841.1 M USD. Training value factor 111.61 USD/h for DEU × F sector.
+- **Best net impact:** Rail_EU_DEV — net 5,789.7 M USD.
+- **Worst net impact:** Rail_EU_OP2 — net 0.3 M USD.
+
+**Country-specific water scarcity cost contrast:**
+
+| Country | Water factor (USD/m³) | Applies to |
+|---------|----------------------|-----------|
+| IND | -20.6049 | Hydro_AS |
+| NGA | -1.7481 | Hydro_AF, Proj_002 |
+| BRA | -0.9938 | Proj_001 |
+| DEU | -0.2291 | Hydro_EU, Proj_003, Rail_EU_DEV, Rail_EU_OP1, Rail_EU_OP2 |
+
+---

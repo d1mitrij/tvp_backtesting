@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  electricity_output.xml — GCAM query: electricity generation by subsector
+  =========================================================================
+  Queries the GCAM output database (BaseX) for electricity production
+  by technology/subsector, region, and year.
+
+  Output unit: EJ/yr (GCAM standard energy unit).
+
+  The iamc_bridge.py converts these to the IAMC variable tree:
+    subsector "coal"        → Secondary Energy|Electricity|Coal
+    subsector "gas"         → Secondary Energy|Electricity|Gas
+    subsector "hydro"       → Secondary Energy|Electricity|Hydro
+    subsector "wind"        → Secondary Energy|Electricity|Wind
+    subsector "solar"       → Secondary Energy|Electricity|Solar
+    subsector "nuclear"     → Secondary Energy|Electricity|Nuclear
+    all subsectors summed   → Secondary Energy|Electricity
+
+  The query uses GCAM's XMLdb query language (XPath-like, run via Java).
+  The axis1 captures the subsector dimension; axis2 captures years.
+-->
+<queries title="Electricity Generation by Subsector">
+
+  <query title="elec gen by subsector">
+    <axis1 name="subsector">subsector[@name]</axis1>
+    <axis2 name="Year">../period[@year]</axis2>
+    <xPath buildList="true" dataName="output-EJ" group="false" sumAll="false">
+      *[@type='sector' and @name='electricity']
+      /subsector
+      /technology
+      /period[@year]
+      /output[@name='electricity']
+      /physical-output/@value
+    </xPath>
+    <comments/>
+  </query>
+
+</queries>

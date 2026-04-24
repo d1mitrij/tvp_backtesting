@@ -1,0 +1,757 @@
+model,scenario,region,variable,unit,year,value
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Coal,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Coal,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Coal,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Coal,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Coal,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Coal,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Gas,GW,2020,11.079260386718534
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Gas,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Gas,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Gas,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Gas,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Gas,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Hydro,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Hydro,GW,2025,0.03
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Hydro,GW,2030,0.03
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Hydro,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Hydro,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Hydro,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Hydro,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Solar,GW,2020,50.1552511415525
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Solar,GW,2025,91.06962557077624
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Solar,GW,2030,195.06962557077625
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Solar,GW,2035,69.00280060882804
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Solar,GW,2040,67.7344089294774
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Solar,GW,2045,145.2826788432268
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Solar,GW,2050,166.08795129375955
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Wind,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Wind,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Wind,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Wind,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Wind,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Wind,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity Additions|Electricity|Wind,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Coal,GW,2020,65.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Coal,GW,2025,54.2
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Coal,GW,2030,43.3
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Coal,GW,2035,32.5
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Coal,GW,2040,21.7
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Coal,GW,2045,10.8
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Gas,GW,2020,26.079260386718534
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Gas,GW,2025,23.079260386718534
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Gas,GW,2030,20.079260386718534
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Gas,GW,2035,17.079260386718534
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Gas,GW,2040,14.079260386718534
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Gas,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Hydro,GW,2020,40.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Hydro,GW,2025,38.33
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Hydro,GW,2030,36.760000000000005
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Hydro,GW,2035,35.06
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Hydro,GW,2040,33.36
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Hydro,GW,2045,31.759999999999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Hydro,GW,2050,30.06
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Solar,GW,2020,50.1552511415525
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Solar,GW,2025,141.22487671232875
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Solar,GW,2030,336.294502283105
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Solar,GW,2035,405.297302891933
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Solar,GW,2040,473.0317118214104
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Solar,GW,2045,568.1591395230848
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Solar,GW,2050,643.1774652460681
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Wind,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Wind,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Wind,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Wind,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Wind,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Wind,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Capacity|Electricity|Wind,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2020,525.2837376
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2025,439.93559020799995
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2030,29.064777600000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2035,24.722270400000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2040,20.379763200000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2020,487.5339456
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2025,406.52830540799994
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2020,37.74979200000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2025,33.407284800000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2030,29.064777600000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2035,24.722270400000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2040,20.379763200000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2020,1.5137280000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2025,1.450529856
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2030,1.391116032
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2035,1.326782592
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2040,1.262449152
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2045,1.201900032
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2050,1.137566592
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2020,11079.260386718546
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2025,30.00000000000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2030,30.00000000000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2020,60186.30136986307
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2025,77409.18173515989
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2030,117041.77534246589
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2035,33121.344292237496
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2040,27093.76357179099
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2045,52301.764383561705
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2050,56469.90343987831
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity,EJ/yr,2020,2.5
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity,EJ/yr,2025,2.95
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity,EJ/yr,2030,3.4
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity,EJ/yr,2035,3.88
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity,EJ/yr,2040,4.35
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity,EJ/yr,2045,4.88
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity,EJ/yr,2050,5.45
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Coal,EJ/yr,2020,1.2299039999999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Coal,EJ/yr,2025,1.02555072
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Coal,EJ/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Coal,EJ/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Coal,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Coal,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Coal,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Gas,EJ/yr,2020,0.37009600000000004
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Gas,EJ/yr,2025,0.32752240000000005
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Gas,EJ/yr,2030,0.28494880000000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Gas,EJ/yr,2035,0.24237520000000007
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Gas,EJ/yr,2040,0.19980160000000005
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Gas,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Gas,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Hydro,EJ/yr,2020,0.504576
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Hydro,EJ/yr,2025,0.483509952
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Hydro,EJ/yr,2030,0.463705344
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Hydro,EJ/yr,2035,0.44226086400000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Hydro,EJ/yr,2040,0.42081638400000004
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Hydro,EJ/yr,2045,0.40063334400000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Hydro,EJ/yr,2050,0.379188864
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Solar,EJ/yr,2020,0.39542399999999994
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Solar,EJ/yr,2025,1.113416928
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Solar,EJ/yr,2030,2.651345856
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Solar,EJ/yr,2035,3.195363936
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Solar,EJ/yr,2040,3.729382016
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Solar,EJ/yr,2045,4.479366656
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Solar,EJ/yr,2050,5.0708111360000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Wind,EJ/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Wind,EJ/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Wind,EJ/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Wind,EJ/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Wind,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Wind,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Africa,Secondary Energy|Electricity|Wind,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Coal,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Coal,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Coal,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Coal,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Coal,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Coal,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Gas,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Gas,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Gas,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Gas,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Gas,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Gas,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Hydro,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Hydro,GW,2025,0.15
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Hydro,GW,2030,0.15
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Hydro,GW,2035,0.15
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Hydro,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Hydro,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Hydro,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Solar,GW,2020,115.66117798994516
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Solar,GW,2025,315.29640929846414
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Solar,GW,2030,432.29089294774224
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Solar,GW,2035,814.4838314653382
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Solar,GW,2040,160.86751994834177
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Solar,GW,2045,233.1153452331535
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Solar,GW,2050,362.2120820072875
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Wind,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Wind,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Wind,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Wind,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Wind,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Wind,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity Additions|Electricity|Wind,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Coal,GW,2020,350.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Coal,GW,2025,291.7
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Coal,GW,2030,233.3
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Coal,GW,2035,175.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Coal,GW,2040,116.7
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Coal,GW,2045,58.3
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Gas,GW,2020,120.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Gas,GW,2025,96.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Gas,GW,2030,72.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Gas,GW,2035,48.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Gas,GW,2040,24.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Gas,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Hydro,GW,2020,150.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Hydro,GW,2025,143.95000000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Hydro,GW,2030,137.8
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Hydro,GW,2035,131.75
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Hydro,GW,2040,125.45
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Hydro,GW,2045,119.25
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Hydro,GW,2050,112.95
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Solar,GW,2020,115.66117798994516
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Solar,GW,2025,430.9575872884093
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Solar,GW,2030,863.2484802361515
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Solar,GW,2035,1677.7323117014898
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Solar,GW,2040,1838.5998316498317
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Solar,GW,2045,1956.0539988930398
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Solar,GW,2050,2002.9696716018634
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Wind,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Wind,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Wind,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Wind,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Wind,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Wind,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Capacity|Electricity|Wind,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2020,2817.7039776
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2025,2655.60968208
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2030,2094.1573365599997
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2035,69.4801152
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2040,34.7400576
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2020,2644.0036896
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2025,2516.64945168
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2030,1989.9371637599997
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2020,173.70028799999997
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2025,138.9602304
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2030,104.22017279999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2035,69.4801152
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2040,34.7400576
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2020,5.392656
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2025,5.175152207999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2030,4.954053312000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2035,4.7365495200000005
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2040,4.510057968
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2045,4.287161520000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2050,4.060669968
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2025,150.00000000000014
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2030,150.00000000000014
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2035,150.00000000000014
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2020,138793.41358793434
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2025,268001.9479036948
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2030,259374.53576864564
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2035,390952.2391033628
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2040,64347.00797933678
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2045,83921.52428393536
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2050,123152.1078824779
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity,EJ/yr,2020,10.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity,EJ/yr,2025,11.5
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity,EJ/yr,2030,12.95
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity,EJ/yr,2035,13.9
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity,EJ/yr,2040,14.6
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity,EJ/yr,2045,15.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity,EJ/yr,2050,15.25
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Coal,EJ/yr,2020,5.697056000000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Coal,EJ/yr,2025,5.4226448
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Coal,EJ/yr,2030,4.287733599999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Coal,EJ/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Coal,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Coal,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Coal,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Gas,EJ/yr,2020,1.702944
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Gas,EJ/yr,2025,1.3623551999999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Gas,EJ/yr,2030,1.0217664
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Gas,EJ/yr,2035,0.6811775999999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Gas,EJ/yr,2040,0.34058879999999997
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Gas,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Gas,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Hydro,EJ/yr,2020,1.7975519999999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Hydro,EJ/yr,2025,1.7250507359999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Hydro,EJ/yr,2030,1.651351104
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Hydro,EJ/yr,2035,1.57884984
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Hydro,EJ/yr,2040,1.503352656
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Hydro,EJ/yr,2045,1.42905384
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Hydro,EJ/yr,2050,1.3535566559999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Solar,EJ/yr,2020,0.8024480000000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Solar,EJ/yr,2025,2.9899492640000007
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Solar,EJ/yr,2030,5.9891488960000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Solar,EJ/yr,2035,11.63997256
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Solar,EJ/yr,2040,12.756058544
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Solar,EJ/yr,2045,13.57094616
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Solar,EJ/yr,2050,13.896443344
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Wind,EJ/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Wind,EJ/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Wind,EJ/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Wind,EJ/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Wind,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Wind,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Asia,Secondary Energy|Electricity|Wind,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Coal,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Coal,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Coal,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Coal,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Coal,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Coal,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Gas,GW,2020,90.19956029088449
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Gas,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Gas,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Gas,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Gas,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Gas,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Hydro,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Hydro,GW,2025,0.002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Hydro,GW,2030,0.002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Hydro,GW,2035,0.002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Hydro,GW,2040,0.002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Hydro,GW,2045,0.002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Hydro,GW,2050,0.002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Solar,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Solar,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Solar,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Solar,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Solar,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Solar,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Solar,GW,2050,374.8477950279049
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Wind,GW,2020,301.42567224759006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Wind,GW,2025,225.30758548959912
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Wind,GW,2030,178.59945932690684
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Wind,GW,2035,121.61656570268902
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Wind,GW,2040,46.3586593945544
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Wind,GW,2045,345.7870121765599
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity Additions|Electricity|Wind,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Coal,GW,2020,100.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Coal,GW,2025,83.3
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Coal,GW,2030,66.7
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Coal,GW,2035,50.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Coal,GW,2040,33.3
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Coal,GW,2045,16.7
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Gas,GW,2020,340.1995602908845
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Gas,GW,2025,290.1995602908845
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Gas,GW,2030,240.1995602908845
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Gas,GW,2035,190.1995602908845
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Gas,GW,2040,140.1995602908845
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Gas,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Hydro,GW,2020,220.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Hydro,GW,2025,211.702
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Hydro,GW,2030,203.304
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Hydro,GW,2035,195.006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Hydro,GW,2040,186.708
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Hydro,GW,2045,178.31
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Hydro,GW,2050,170.012
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Solar,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Solar,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Solar,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Solar,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Solar,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Solar,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Solar,GW,2050,374.8477950279049
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Wind,GW,2020,301.42567224759006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Wind,GW,2025,526.7332577371892
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Wind,GW,2030,705.3327170640961
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Wind,GW,2035,826.9492827667851
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Wind,GW,2040,873.3079421613395
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Wind,GW,2045,917.6692820903093
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Capacity|Electricity|Wind,GW,2050,692.3616966007103
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2020,1017.5140800000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2025,631.44186
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2030,319.566
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2035,165.64800000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2040,79.25399999999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2020,525.0744000000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2025,211.37730000000008
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2020,492.43968
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2025,420.06456
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2030,319.566
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2035,165.64800000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2040,79.25399999999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2020,7.284816
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2025,7.010045985600001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2030,6.731964691200001
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2035,6.4571946768
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2040,6.1824246624
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2045,5.904343368
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2050,5.6295733536000006
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2020,81179.60426179614
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2025,2.000000000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2030,2.000000000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2035,2.000000000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2040,2.000000000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2045,2.000000000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2050,2.000000000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2050,127448.25030948782
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2020,482281.07559614466
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2025,281634.4818619992
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2030,178599.45932690703
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2035,103374.08084728578
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2040,34768.99454591584
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2045,242050.90852359222
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity,EJ/yr,2020,12.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity,EJ/yr,2025,12.2
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity,EJ/yr,2030,12.05
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity,EJ/yr,2035,11.6
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity,EJ/yr,2040,11.1
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity,EJ/yr,2045,10.649999999999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity,EJ/yr,2050,10.2
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Coal,EJ/yr,2020,1.89216
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Coal,EJ/yr,2025,0.7617200000000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Coal,EJ/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Coal,EJ/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Coal,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Coal,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Coal,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Gas,EJ/yr,2020,4.82784
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Gas,EJ/yr,2025,4.1182799999999995
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Gas,EJ/yr,2030,3.133
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Gas,EJ/yr,2035,1.6240000000000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Gas,EJ/yr,2040,0.777
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Gas,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Gas,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Hydro,EJ/yr,2020,2.4282719999999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Hydro,EJ/yr,2025,2.3366819952
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Hydro,EJ/yr,2030,2.2439882304000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Hydro,EJ/yr,2035,2.1523982256
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Hydro,EJ/yr,2040,2.0608082208
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Hydro,EJ/yr,2045,1.968114456
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Hydro,EJ/yr,2050,1.8765244512
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Solar,EJ/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Solar,EJ/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Solar,EJ/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Solar,EJ/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Solar,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Solar,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Solar,EJ/yr,2050,1.7731800096000014
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Wind,EJ/yr,2020,2.851728
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Wind,EJ/yr,2025,4.983318004799999
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Wind,EJ/yr,2030,6.6730117695999995
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Wind,EJ/yr,2035,7.8236017744
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Wind,EJ/yr,2040,8.2621917792
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Wind,EJ/yr,2045,8.681885543999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,Europe,Secondary Energy|Electricity|Wind,EJ/yr,2050,6.5502955391999995
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Coal,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Coal,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Coal,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Coal,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Coal,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Coal,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Gas,GW,2020,5.431253170979216
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Gas,GW,2025,9.193945543717216
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Gas,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Gas,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Gas,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Gas,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Hydro,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Hydro,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Hydro,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Hydro,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Hydro,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Hydro,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Hydro,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Solar,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Solar,GW,2025,114.61659276906443
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Solar,GW,2030,132.8656166589461
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Solar,GW,2035,142.98563960029114
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Solar,GW,2040,147.23084728564172
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Solar,GW,2045,121.20724417091319
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Solar,GW,2050,207.7452187148434
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Wind,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Wind,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Wind,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Wind,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Wind,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Wind,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity Additions|Electricity|Wind,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Coal,GW,2020,35.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Coal,GW,2025,29.2
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Coal,GW,2030,23.3
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Coal,GW,2035,17.5
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Coal,GW,2040,11.7
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Coal,GW,2045,5.8
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Coal,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Gas,GW,2020,85.43125317097922
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Gas,GW,2025,78.62519871469644
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Gas,GW,2030,62.62519871469643
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Gas,GW,2035,46.62519871469643
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Gas,GW,2040,30.62519871469643
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Gas,GW,2045,9.193945543717216
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Gas,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Hydro,GW,2020,185.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Hydro,GW,2025,177.6
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Hydro,GW,2030,170.2
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Hydro,GW,2035,162.8
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Hydro,GW,2040,155.4
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Hydro,GW,2045,148.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Hydro,GW,2050,140.6
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Solar,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Solar,GW,2025,114.61659276906443
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Solar,GW,2030,247.48220942801052
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Solar,GW,2035,390.46784902830166
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Solar,GW,2040,537.6986963139434
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Solar,GW,2045,658.9059404848566
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Solar,GW,2050,752.0345664306356
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Wind,GW,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Wind,GW,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Wind,GW,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Wind,GW,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Wind,GW,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Wind,GW,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Capacity|Electricity|Wind,GW,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2020,269.358264
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2025,235.36252224
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2030,187.64224704
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2035,121.57323263999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2040,44.33004864
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2045,13.308258239999976
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2020,145.69632
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2025,121.5523584
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2030,96.9921216
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2035,54.08314559999997
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Coal,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2020,123.66194400000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2025,113.81016384
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2030,90.65012544
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2035,67.49008704
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2040,44.33004864
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2045,13.308258239999976
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Gas,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2020,7.876116
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2025,7.561071360000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2030,7.24602672
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2035,6.930982080000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2040,6.615937440000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2045,6.3008928
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Hydro,Mt CO2/yr,2050,5.98584816
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Solar,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Emissions|CO2|Energy|Supply|Electricity|Wind,Mt CO2/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Coal,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2020,4888.127853881299
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2025,8274.550989345504
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Gas,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Hydro,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2025,97424.10385370486
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2030,79719.36999536774
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2035,68633.10700813982
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2040,58892.338914256754
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2045,43634.6079015288
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Solar,million US$2020/yr,2050,70633.37436304684
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Investment|Energy Supply|Electricity|Wind,million US$2020/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity,EJ/yr,2020,4.5
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity,EJ/yr,2025,5.02
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity,EJ/yr,2030,5.54
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity,EJ/yr,2035,6.05
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity,EJ/yr,2040,6.539999999999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity,EJ/yr,2045,7.01
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity,EJ/yr,2050,7.45
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Coal,EJ/yr,2020,0.662256
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Coal,EJ/yr,2025,0.55251072
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Coal,EJ/yr,2030,0.44087328000000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Coal,EJ/yr,2035,0.24583247999999985
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Coal,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Coal,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Coal,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Gas,EJ/yr,2020,1.2123720000000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Gas,EJ/yr,2025,1.11578592
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Gas,EJ/yr,2030,0.88872672
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Gas,EJ/yr,2035,0.6616675200000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Gas,EJ/yr,2040,0.43460832000000005
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Gas,EJ/yr,2045,0.13047311999999978
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Gas,EJ/yr,2050,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Hydro,EJ/yr,2020,2.625372
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Hydro,EJ/yr,2025,2.5203571200000003
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Hydro,EJ/yr,2030,2.4153422399999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Hydro,EJ/yr,2035,2.31032736
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Hydro,EJ/yr,2040,2.20531248
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Hydro,EJ/yr,2045,2.1002975999999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Hydro,EJ/yr,2050,1.9952827199999998
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Solar,EJ/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Solar,EJ/yr,2025,0.8313462399999996
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Solar,EJ/yr,2030,1.7950577600000002
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Solar,EJ/yr,2035,2.8321726399999996
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Solar,EJ/yr,2040,3.900079199999999
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Solar,EJ/yr,2045,4.779229280000001
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Solar,EJ/yr,2050,5.45471728
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Wind,EJ/yr,2020,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Wind,EJ/yr,2025,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Wind,EJ/yr,2030,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Wind,EJ/yr,2035,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Wind,EJ/yr,2040,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Wind,EJ/yr,2045,0.0
+OSeMOSYS|tz-osemosys,SSP1-1.9,LATAM,Secondary Energy|Electricity|Wind,EJ/yr,2050,0.0

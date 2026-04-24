@@ -1,0 +1,11 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Rail_EU_OP1/habitat_quality",
+  "results_suffix": "Rail_EU_OP1",
+  "lulc_cur_path": "modeled_input_data/invest_inputs/europe/land_use_land_cover.tif",
+  "lulc_fut_path": "modeled_input_data/invest_inputs/europe/land_use_with_rail_corridor.tif",
+  "access_vector_path": "modeled_input_data/invest_inputs/europe/rail_alignment.shp",
+  "sensitivity_table_path": "modeled_input_data/invest_inputs/europe/habitat_sensitivity.csv",
+  "threats_table_path": "modeled_input_data/invest_inputs/europe/threat_data.csv",
+  "half_saturation_constant": 0.05,
+  "_model_name": "rail_habitat_quality"
+}

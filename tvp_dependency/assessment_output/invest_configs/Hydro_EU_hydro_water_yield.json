@@ -1,0 +1,19 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Hydro_EU/water_yield",
+  "results_suffix": "Hydro_EU",
+  "lulc_path": "modeled_input_data/invest_inputs/europe/land_use_land_cover.tif",
+  "depth_to_root_rest_layer_path": "modeled_input_data/invest_inputs/europe/soil_depth.tif",
+  "precipitation_path": "modeled_input_data/invest_inputs/europe/annual_precipitation.tif",
+  "pawc_path": "modeled_input_data/invest_inputs/europe/plant_avail_water_content.tif",
+  "eto_path": "modeled_input_data/invest_inputs/europe/reference_evapotranspiration.tif",
+  "watersheds_path": "modeled_input_data/invest_inputs/europe/watersheds.shp",
+  "sub_watersheds_path": "modeled_input_data/invest_inputs/europe/sub_watersheds.shp",
+  "biophysical_table_path": "modeled_input_data/invest_inputs/europe/biophysical_table.csv",
+  "seasonality_constant": 5,
+  "calc_water_scarcity": true,
+  "demand_table_path": "modeled_input_data/invest_inputs/europe/water_demand_by_lulc.csv",
+  "valuation_table_path": "modeled_input_data/invest_inputs/europe/hydropower_valuation.csv",
+  "calc_scarcity": true,
+  "calc_valuation": true,
+  "_model_name": "hydro_water_yield"
+}

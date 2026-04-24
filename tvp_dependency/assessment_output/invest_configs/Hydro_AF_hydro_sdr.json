@@ -1,0 +1,15 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Hydro_AF/sdr",
+  "results_suffix": "Hydro_AF",
+  "dem_path": "modeled_input_data/invest_inputs/africa/digital_elevation_model.tif",
+  "erosivity_path": "modeled_input_data/invest_inputs/africa/rainfall_erosivity.tif",
+  "erodibility_path": "modeled_input_data/invest_inputs/africa/soil_erodibility.tif",
+  "lulc_path": "modeled_input_data/invest_inputs/africa/land_use_land_cover.tif",
+  "watersheds_path": "modeled_input_data/invest_inputs/africa/watersheds.shp",
+  "biophysical_table_path": "modeled_input_data/invest_inputs/africa/biophysical_table.csv",
+  "threshold_flow_accumulation": 1000,
+  "k_param": 2,
+  "ic_0_param": 0.5,
+  "sdr_max": 0.8,
+  "_model_name": "hydro_sdr"
+}

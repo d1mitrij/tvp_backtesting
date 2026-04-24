@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ssp4_policy.xml — SSP4-6.0 Inequality (polarised ~3 °C pathway)
+  ================================================================
+  Narrative: stark inequality between and within countries.
+  High-tech, capital-intensive energy systems in wealthy regions (Europe,
+  urban Asia); labour-intensive, fossil-dependent systems in low-income
+  regions (Africa, rural Asia, parts of LATAM). ~3 °C trajectory.
+
+  KEY SSP4 DISTINCTION: polarisation, not uniform fragmentation (SSP3).
+    Europe → rapid decarbonisation (strong institutions, Rail_EU_DEV)
+    Africa → very slow (limited capital, Proj_002 hospital serves tiny elite)
+
+  Carbon prices [$/tonne CO2]:
+    Africa:  8→25    (low capacity, limited enforcement)
+    Asia:   28→120   (divergent — urban strict, rural weak; net intermediate)
+    Europe: 100→500  (consistent with SSP1-level institutional ambition)
+    LATAM:  20→80    (intermediate-loose, bifurcated economy)
+
+  Renewable electricity standard:
+    Africa:  26%→30%   (floor only — no investment capacity for ambition)
+    Asia:    26%→75%   (rapid urban-sector deployment)
+    Europe:  44%→98%   (near-full decarbonisation, mirrors SSP1)
+    LATAM:   50%→76%
+-->
+<scenario>
+
+  <!-- Africa: very low carbon price — limited enforcement capacity -->
+  <policy-portfolio-standard type="GHG" name="co2_tax_africa_e4">
+    <market>Africa_Eastern</market>
+    <constraint year="2020">8</constraint>
+    <constraint year="2025">11</constraint>
+    <constraint year="2030">14</constraint>
+    <constraint year="2035">17</constraint>
+    <constraint year="2040">20</constraint>
+    <constraint year="2045">23</constraint>
+    <constraint year="2050">25</constraint>
+  </policy-portfolio-standard>
+  <policy-portfolio-standard type="GHG" name="co2_tax_africa_n4">
+    <market>Africa_Northern</market>
+    <constraint year="2020">8</constraint>
+    <constraint year="2025">11</constraint>
+    <constraint year="2030">14</constraint>
+    <constraint year="2035">17</constraint>
+    <constraint year="2040">20</constraint>
+    <constraint year="2045">23</constraint>
+    <constraint year="2050">25</constraint>
+  </policy-portfolio-standard>
+  <policy-portfolio-standard type="GHG" name="co2_tax_africa_s4">
+    <market>Africa_Southern</market>
+    <constraint year="2020">8</constraint>
+    <constraint year="2025">11</constraint>
+    <constraint year="2030">14</constraint>
+    <constraint year="2035">17</constraint>
+    <constraint year="2040">20</constraint>
+    <constraint year="2045">23</constraint>
+    <constraint year="2050">25</constraint>
+  </policy-portfolio-standard>
+  <policy-portfolio-standard type="GHG" name="co2_tax_africa_w4">
+    <market>Africa_Western</market>
+    <constraint year="2020">8</constraint>
+    <constraint year="2025">11</constraint>
+    <constraint year="2030">14</constraint>
+    <constraint year="2035">17</constraint>
+    <constraint year="2040">20</constraint>
+    <constraint year="2045">23</constraint>
+    <constraint year="2050">25</constraint>
+  </policy-portfolio-standard>
+
+  <!-- Asia: intermediate — urban high-income strict, rural effectively weak -->
+  <policy-portfolio-standard type="GHG" name="co2_tax_china4">
+    <market>China</market>
+    <constraint year="2020">28</constraint>
+    <constraint year="2025">45</constraint>
+    <constraint year="2030">65</constraint>
+    <constraint year="2035">85</constraint>
+    <constraint year="2040">100</constraint>
+    <constraint year="2045">112</constraint>
+    <constraint year="2050">120</constraint>
+  </policy-portfolio-standard>
+  <policy-portfolio-standard type="GHG" name="co2_tax_india4">
+    <market>India</market>
+    <constraint year="2020">28</constraint>
+    <constraint year="2025">45</constraint>
+    <constraint year="2030">65</constraint>
+    <constraint year="2035">85</constraint>
+    <constraint year="2040">100</constraint>
+    <constraint year="2045">112</constraint>
+    <constraint year="2050">120</constraint>
+  </policy-portfolio-standard>
+  <policy-portfolio-standard type="GHG" name="co2_tax_sea4">
+    <market>Southeast Asia</market>
+    <constraint year="2020">28</constraint>
+    <constraint year="2025">45</constraint>
+    <constraint year="2030">65</constraint>
+    <constraint year="2035">85</constraint>
+    <constraint year="2040">100</constraint>
+    <constraint year="2045">112</constraint>
+    <constraint year="2050">120</constraint>
+  </policy-portfolio-standard>
+
+  <!-- Europe: high carbon price — mirrors SSP1 institutional ambition -->
+  <policy-portfolio-standard type="GHG" name="co2_tax_eu15_4">
+    <market>EU-15</market>
+    <constraint year="2020">100</constraint>
+    <constraint year="2025">170</constraint>
+    <constraint year="2030">265</constraint>
+    <constraint year="2035">360</constraint>
+    <constraint year="2040">430</constraint>
+    <constraint year="2045">475</constraint>
+    <constraint year="2050">500</constraint>
+  </policy-portfolio-standard>
+  <policy-portfolio-standard type="GHG" name="co2_tax_eu12_4">
+    <market>EU-12</market>
+    <constraint year="2020">100</constraint>
+    <constraint year="2025">170</constraint>
+    <constraint year="2030">265</constraint>
+    <constraint year="2035">360</constraint>
+    <constraint year="2040">430</constraint>
+    <constraint year="2045">475</constraint>
+    <constraint year="2050">500</constraint>
+  </policy-portfolio-standard>
+
+  <!-- LATAM: intermediate-loose -->
+  <policy-portfolio-standard type="GHG" name="co2_tax_latam4">
+    <market>Mexico</market>
+    <constraint year="2020">20</constraint>
+    <constraint year="2025">32</constraint>
+    <constraint year="2030">47</constraint>
+    <constraint year="2035">60</constraint>
+    <constraint year="2040">70</constraint>
+    <constraint year="2045">76</constraint>
+    <constraint year="2050">80</constraint>
+  </policy-portfolio-standard>
+  <policy-portfolio-standard type="GHG" name="co2_tax_brazil4">
+    <market>Brazil</market>
+    <constraint year="2020">20</constraint>
+    <constraint year="2025">32</constraint>
+    <constraint year="2030">47</constraint>
+    <constraint year="2035">60</constraint>
+    <constraint year="2040">70</constraint>
+    <constraint year="2045">76</constraint>
+    <constraint year="2050">80</constraint>
+  </policy-portfolio-standard>
+
+  <!-- Renewable standards: DIVERGENT — the core SSP4 signal -->
+  <policy-portfolio-standard type="RES" name="RPS_Africa_4">
+    <market>Africa</market>
+    <min-quantity year="2020">0.26</min-quantity>
+    <min-quantity year="2025">0.26</min-quantity>
+    <min-quantity year="2030">0.27</min-quantity>
+    <min-quantity year="2035">0.27</min-quantity>
+    <min-quantity year="2040">0.28</min-quantity>
+    <min-quantity year="2045">0.29</min-quantity>
+    <min-quantity year="2050">0.30</min-quantity>
+  </policy-portfolio-standard>
+
+  <policy-portfolio-standard type="RES" name="RPS_Asia_4">
+    <market>Asia</market>
+    <min-quantity year="2020">0.26</min-quantity>
+    <min-quantity year="2025">0.33</min-quantity>
+    <min-quantity year="2030">0.42</min-quantity>
+    <min-quantity year="2035">0.51</min-quantity>
+    <min-quantity year="2040">0.60</min-quantity>
+    <min-quantity year="2045">0.68</min-quantity>
+    <min-quantity year="2050">0.75</min-quantity>
+  </policy-portfolio-standard>
+
+  <!-- Europe: high renewable mandate consistent with high carbon price -->
+  <policy-portfolio-standard type="RES" name="RPS_Europe_4">
+    <market>Europe</market>
+    <min-quantity year="2020">0.44</min-quantity>
+    <min-quantity year="2025">0.58</min-quantity>
+    <min-quantity year="2030">0.72</min-quantity>
+    <min-quantity year="2035">0.83</min-quantity>
+    <min-quantity year="2040">0.91</min-quantity>
+    <min-quantity year="2045">0.96</min-quantity>
+    <min-quantity year="2050">0.98</min-quantity>
+  </policy-portfolio-standard>
+
+  <policy-portfolio-standard type="RES" name="RPS_LATAM_4">
+    <market>Latin America</market>
+    <min-quantity year="2020">0.50</min-quantity>
+    <min-quantity year="2025">0.53</min-quantity>
+    <min-quantity year="2030">0.57</min-quantity>
+    <min-quantity year="2035">0.61</min-quantity>
+    <min-quantity year="2040">0.66</min-quantity>
+    <min-quantity year="2045">0.71</min-quantity>
+    <min-quantity year="2050">0.76</min-quantity>
+  </policy-portfolio-standard>
+
+</scenario>

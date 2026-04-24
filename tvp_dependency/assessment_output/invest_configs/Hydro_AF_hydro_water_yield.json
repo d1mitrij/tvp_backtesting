@@ -1,0 +1,19 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Hydro_AF/water_yield",
+  "results_suffix": "Hydro_AF",
+  "lulc_path": "modeled_input_data/invest_inputs/africa/land_use_land_cover.tif",
+  "depth_to_root_rest_layer_path": "modeled_input_data/invest_inputs/africa/soil_depth.tif",
+  "precipitation_path": "modeled_input_data/invest_inputs/africa/annual_precipitation.tif",
+  "pawc_path": "modeled_input_data/invest_inputs/africa/plant_avail_water_content.tif",
+  "eto_path": "modeled_input_data/invest_inputs/africa/reference_evapotranspiration.tif",
+  "watersheds_path": "modeled_input_data/invest_inputs/africa/watersheds.shp",
+  "sub_watersheds_path": "modeled_input_data/invest_inputs/africa/sub_watersheds.shp",
+  "biophysical_table_path": "modeled_input_data/invest_inputs/africa/biophysical_table.csv",
+  "seasonality_constant": 5,
+  "calc_water_scarcity": true,
+  "demand_table_path": "modeled_input_data/invest_inputs/africa/water_demand_by_lulc.csv",
+  "valuation_table_path": "modeled_input_data/invest_inputs/africa/hydropower_valuation.csv",
+  "calc_scarcity": true,
+  "calc_valuation": true,
+  "_model_name": "hydro_water_yield"
+}

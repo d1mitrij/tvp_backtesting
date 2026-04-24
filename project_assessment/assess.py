@@ -1774,7 +1774,7 @@ def write_final_analysis(
             c_ghg   = f"{row['coeff_ghg_base_usd_kg']:.4f}"  if row["coeff_ghg_base_usd_kg"]  is not None else "n/a"
             c_paris = f"{row['coeff_ghg_paris_usd_kg']:.4f}" if row["coeff_ghg_paris_usd_kg"] is not None else "n/a"
             c_wat   = f"{row['coeff_water_usd_m3']:.4f}"     if row["coeff_water_usd_m3"]     is not None else "n/a"
-            c_trn   = f"{row['coeff_train_usd_h']:.4f}"      if row["coeff_train_usd_h"]      is not None else "n/a"
+            c_trn   = f"{row['coeff_gva_usd_h']:.4f}"        if row["coeff_gva_usd_h"]        is not None else "n/a"
             a(f"| {row['project_id']} | {row['country_iso3']} | {row['nace_sector']} "
               f"| {c_ghg} | {c_paris} | {c_wat} | {c_trn} |")
         a("")
@@ -1832,7 +1832,7 @@ def write_final_analysis(
               f"European counterparts due to greater physical water scarcity.")
             a(f"- **Highest employment benefit:** {best_emp['project_id']} ({best_emp['region']}) — "
               f"{_fmt(best_emp['employment_impact_MUSD'], 1)} M USD. "
-              f"Training value factor {best_emp['coeff_train_usd_h']:.2f} USD/h for "
+              f"Training value factor {best_emp['coeff_gva_usd_h']:.2f} USD/h for "
               f"{best_emp['country_iso3']} × {best_emp['nace_sector']} sector.")
             a(f"- **Best net impact:** {best_net['project_id']} — "
               f"net {_fmt(best_net['net_impact_MUSD'], 1)} M USD.")

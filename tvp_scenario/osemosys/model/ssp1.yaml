@@ -1,0 +1,141 @@
+# ─── SSP1-1.9 — Sustainability ────────────────────────────────────────────────
+# Narrative: rapid transition toward human well-being, reduced inequality,
+# low resource intensity, global cooperation. Electricity demand grows
+# moderately (efficiency gains offset growth); strict CO2 limits force deep
+# decarbonisation by 2045. Renewable share ≥ 95 % in most regions by 2050.
+#
+# Project links:
+#   Rail_EU_DEV (€1.85B) and hospital Proj_003 reflect the institutional
+#   capacity and policy ambition consistent with SSP1 in Europe.
+#   Hydro retrofits are deployed fully and early in this pathway.
+#
+# Merges with base.yaml via Model.from_yaml("base.yaml", "ssp1.yaml").
+
+# ── Electricity demand [PJ/yr] ─────────────────────────────────────────────
+# Africa: moderate growth — health system investment (Proj_002) raises
+#   living standards and energy access but efficiency limits peak demand.
+# Asia: peak demand moderates after 2040 through efficiency programmes.
+# Europe: slight efficiency-driven decline post-2030; rail electrification
+#   (0.099 PJ/yr Rail_EU_DEV) is embedded in the 2025+ trajectory.
+# LATAM: primary health care (Proj_001, $250M) raises incomes; efficiency
+#   slows demand growth after 2035.
+commodities:
+  - id: ELC
+    include_in_joint_renewable_target:
+      "*":
+        "*": true
+    demand_annual:
+      Africa:
+        "2020": 2500
+        "2025": 2950
+        "2030": 3400
+        "2035": 3880
+        "2040": 4350
+        "2045": 4880
+        "2050": 5450
+      Asia:
+        "2020": 10000
+        "2025": 11500
+        "2030": 12950
+        "2035": 13900
+        "2040": 14600
+        "2045": 15000
+        "2050": 15250
+      Europe:
+        "2020": 12000
+        "2025": 12200
+        "2030": 12050
+        "2035": 11600
+        "2040": 11100
+        "2045": 10650
+        "2050": 10200
+      LATAM:
+        "2020": 4500
+        "2025": 5020
+        "2030": 5540
+        "2035": 6050
+        "2040": 6540
+        "2045": 7010
+        "2050": 7450
+
+# ── CO2 emission limits [Mt CO2/yr] + carbon prices ───────────────────────
+# Calibrated to IPCC AR6 1.5 °C carbon budget (C1 scenarios).
+# Africa limits reflect a just-transition allowance: higher near-term budget
+# to allow development, steeper decline post-2035.
+# Europe limits are tightest, consistent with EU institutional capacity
+# signalled by Rail_EU_DEV infrastructure investment.
+impacts:
+  - id: CO2
+    penalty:
+      Africa: {"*": 80}
+      Asia:   {"*": 65}
+      Europe: {"*": 120}
+      LATAM:  {"*": 80}
+    constraint_annual:
+      Africa:
+        "2020": 950
+        "2025": 750
+        "2030": 520
+        "2035": 310
+        "2040": 155
+        "2045": 60
+        "2050": 20
+      Asia:
+        "2020": 4100
+        "2025": 3150
+        "2030": 2120
+        "2035": 1280
+        "2040": 620
+        "2045": 220
+        "2050": 60
+      Europe:
+        "2020": 1950
+        "2025": 1330
+        "2030": 800
+        "2035": 420
+        "2040": 175
+        "2045": 55
+        "2050": 12
+      LATAM:
+        "2020": 680
+        "2025": 500
+        "2030": 340
+        "2035": 190
+        "2040": 88
+        "2045": 30
+        "2050": 8
+
+# ── Minimum renewable electricity share ────────────────────────────────────
+renewable_production_target:
+  Africa:
+    "2020": 0.36
+    "2025": 0.51
+    "2030": 0.66
+    "2035": 0.79
+    "2040": 0.89
+    "2045": 0.95
+    "2050": 0.98
+  Asia:
+    "2020": 0.26
+    "2025": 0.41
+    "2030": 0.59
+    "2035": 0.73
+    "2040": 0.85
+    "2045": 0.93
+    "2050": 0.97
+  Europe:
+    "2020": 0.44
+    "2025": 0.60
+    "2030": 0.74
+    "2035": 0.86
+    "2040": 0.93
+    "2045": 0.97
+    "2050": 0.99
+  LATAM:
+    "2020": 0.52
+    "2025": 0.65
+    "2030": 0.76
+    "2035": 0.85
+    "2040": 0.92
+    "2045": 0.96
+    "2050": 0.99

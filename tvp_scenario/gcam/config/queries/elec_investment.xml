@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  elec_investment.xml — GCAM query: capital investment in electricity by subsector
+  ==================================================================================
+  Queries new capacity investment costs in the electricity sector.
+
+  Output unit: billion US$2020/yr (GCAM investment unit).
+  iamc_bridge.py converts × 1000 → million US$2020/yr to match IAMC convention.
+
+  The iamc_bridge.py maps to IAMC:
+    subsector "coal"  → Investment|Energy Supply|Electricity|Coal
+    subsector "gas"   → Investment|Energy Supply|Electricity|Gas
+    subsector "solar" → Investment|Energy Supply|Electricity|Solar
+    subsector "wind"  → Investment|Energy Supply|Electricity|Wind
+    subsector "hydro" → Investment|Energy Supply|Electricity|Hydro
+-->
+<queries title="Electricity Sector Investment">
+
+  <query title="elec investment by subsector">
+    <axis1 name="subsector">../subsector[@name]</axis1>
+    <axis2 name="Year">../period[@year]</axis2>
+    <xPath buildList="true" dataName="investment-BnUSD" group="false" sumAll="false">
+      *[@type='sector' and @name='electricity']
+      /subsector
+      /technology
+      /period[@year]
+      /investment/@value
+    </xPath>
+    <comments/>
+  </query>
+
+</queries>

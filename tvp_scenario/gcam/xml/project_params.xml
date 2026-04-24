@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  project_params.xml — Project-calibrated GCAM parameter overrides
+  ================================================================
+  Applied to ALL policy scenarios via project.xml <xmlEdit>.
+  Generated values are cross-checked by derive_parameters.py.
+
+  COAL THERMAL EFFICIENCY
+  -----------------------
+  GCAM fixes the coal emission coefficient at ~95 kgCO2/GJ (bituminous, HHV).
+  We adjust the thermal efficiency of each region's coal fleet so that the
+  effective output emission factor matches the avoided-CO2 evidence from
+  hydro_finance_input.csv:
+
+    Africa : 0.3964 Mt CO2/PJ_elec → implied eff = 95 / (0.3964×1000) = 23.97 %
+    Asia   : 0.4641 Mt CO2/PJ_elec → implied eff = 95 / (0.4641×1000) = 20.47 %
+    Europe : 0.2775 Mt CO2/PJ_elec → implied eff = 95 / (0.2775×1000) = 34.23 %
+    LATAM  : 0.2200 Mt CO2/PJ_elec → implied eff = 95 / (0.2200×1000) = 43.18 %
+             (no hydro project; LATAM grid is gas-heavy → lower effective EF)
+
+  The efficiency is applied to the "coal (conv pul)" subsector (conventional
+  pulverised coal), which dominates the fleet in developing-region GCAM scenarios.
+
+  HYDRO RETROFIT CAPACITY (from hydro_finance_input.csv)
+  -------------------------------------------------------
+  Budget at $1,000/kW gives maximum new HYDRO_RETRO capacity.
+  Converted to EJ/yr using regional capacity factors:
+    Africa : 0.030 GW × 40% CF × 31.536 PJ/(GW·yr) × 1e-3 = 3.784e-4 EJ/yr
+    Asia   : 0.150 GW × 38% CF × 31.536 PJ/(GW·yr) × 1e-3 = 1.797e-3 EJ/yr
+    Europe : 0.002 GW × 35% CF × 31.536 PJ/(GW·yr) × 1e-3 = 2.207e-5 EJ/yr
+    LATAM  : 0.000 GW (no project)
+
+  These are modelled as fixed-output additions in GCAM's hydro subsector,
+  available from 2025 onward once project construction is complete.
+
+  RAIL ELECTRICITY DEMAND (from rail_finance_input.csv)
+  ------------------------------------------------------
+  Rail_EU_DEV: 5.5 M pax/yr × 5 kWh/pax × 3.6e-9 PJ/kWh = 0.0990 PJ/yr
+  = 9.90e-5 EJ/yr added to Europe's transportation final demand from 2025.
+-->
+
+<scenario>
+
+  <!-- ── Africa: coal fleet efficiency (23.97 %) ───────────────────────── -->
+  <global-technology-database>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="Africa_Eastern">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.2397</efficiency></period>
+        <period year="2025"><efficiency>0.2397</efficiency></period>
+        <period year="2030"><efficiency>0.2500</efficiency></period>
+        <period year="2035"><efficiency>0.2600</efficiency></period>
+        <period year="2040"><efficiency>0.2700</efficiency></period>
+        <period year="2045"><efficiency>0.2800</efficiency></period>
+        <period year="2050"><efficiency>0.2900</efficiency></period>
+      </technology>
+    </location-info>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="Africa_Northern">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.2397</efficiency></period>
+        <period year="2025"><efficiency>0.2397</efficiency></period>
+        <period year="2030"><efficiency>0.2500</efficiency></period>
+        <period year="2035"><efficiency>0.2600</efficiency></period>
+        <period year="2040"><efficiency>0.2700</efficiency></period>
+        <period year="2045"><efficiency>0.2800</efficiency></period>
+        <period year="2050"><efficiency>0.2900</efficiency></period>
+      </technology>
+    </location-info>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="Africa_Southern">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.2397</efficiency></period>
+        <period year="2025"><efficiency>0.2397</efficiency></period>
+        <period year="2030"><efficiency>0.2500</efficiency></period>
+        <period year="2035"><efficiency>0.2600</efficiency></period>
+        <period year="2040"><efficiency>0.2700</efficiency></period>
+        <period year="2045"><efficiency>0.2800</efficiency></period>
+        <period year="2050"><efficiency>0.2900</efficiency></period>
+      </technology>
+    </location-info>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="Africa_Western">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.2397</efficiency></period>
+        <period year="2025"><efficiency>0.2397</efficiency></period>
+        <period year="2030"><efficiency>0.2500</efficiency></period>
+        <period year="2035"><efficiency>0.2600</efficiency></period>
+        <period year="2040"><efficiency>0.2700</efficiency></period>
+        <period year="2045"><efficiency>0.2800</efficiency></period>
+        <period year="2050"><efficiency>0.2900</efficiency></period>
+      </technology>
+    </location-info>
+  </global-technology-database>
+
+  <!-- ── Asia: coal fleet efficiency (20.47 %) ─────────────────────────── -->
+  <global-technology-database>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="China">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.2047</efficiency></period>
+        <period year="2025"><efficiency>0.2200</efficiency></period>
+        <period year="2030"><efficiency>0.2350</efficiency></period>
+        <period year="2035"><efficiency>0.2500</efficiency></period>
+        <period year="2040"><efficiency>0.2650</efficiency></period>
+        <period year="2045"><efficiency>0.2800</efficiency></period>
+        <period year="2050"><efficiency>0.2950</efficiency></period>
+      </technology>
+    </location-info>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="India">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.2047</efficiency></period>
+        <period year="2025"><efficiency>0.2150</efficiency></period>
+        <period year="2030"><efficiency>0.2300</efficiency></period>
+        <period year="2035"><efficiency>0.2450</efficiency></period>
+        <period year="2040"><efficiency>0.2600</efficiency></period>
+        <period year="2045"><efficiency>0.2750</efficiency></period>
+        <period year="2050"><efficiency>0.2900</efficiency></period>
+      </technology>
+    </location-info>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="Southeast Asia">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.2047</efficiency></period>
+        <period year="2025"><efficiency>0.2200</efficiency></period>
+        <period year="2030"><efficiency>0.2350</efficiency></period>
+        <period year="2035"><efficiency>0.2500</efficiency></period>
+        <period year="2040"><efficiency>0.2650</efficiency></period>
+        <period year="2045"><efficiency>0.2800</efficiency></period>
+        <period year="2050"><efficiency>0.2950</efficiency></period>
+      </technology>
+    </location-info>
+  </global-technology-database>
+
+  <!-- ── Europe: coal fleet efficiency (34.23 %) ───────────────────────── -->
+  <global-technology-database>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="EU-15">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.3423</efficiency></period>
+        <period year="2025"><efficiency>0.3500</efficiency></period>
+        <period year="2030"><efficiency>0.3600</efficiency></period>
+        <period year="2035"><efficiency>0.3700</efficiency></period>
+        <period year="2040"><efficiency>0.3800</efficiency></period>
+        <period year="2045"><efficiency>0.3900</efficiency></period>
+        <period year="2050"><efficiency>0.4000</efficiency></period>
+      </technology>
+    </location-info>
+    <location-info sector-name="electricity" subsector-name="coal (conv pul)"
+                   region="EU-12">
+      <technology name="coal (conv pul)">
+        <period year="2020"><efficiency>0.3423</efficiency></period>
+        <period year="2025"><efficiency>0.3500</efficiency></period>
+        <period year="2030"><efficiency>0.3600</efficiency></period>
+        <period year="2035"><efficiency>0.3700</efficiency></period>
+        <period year="2040"><efficiency>0.3800</efficiency></period>
+        <period year="2045"><efficiency>0.3900</efficiency></period>
+        <period year="2050"><efficiency>0.4000</efficiency></period>
+      </technology>
+    </location-info>
+  </global-technology-database>
+
+  <!-- ── Hydro retrofit fixed-output additions (2025+) ────────────────── -->
+  <!--
+    GCAM hydro is typically modelled as a fixed resource. We add small
+    fixed-output contributions representing the retrofit projects.
+    Values are in EJ/yr (see header comments for derivation).
+  -->
+
+  <!-- Africa: Hydro_AF — 0.030 GW at 40% CF = 3.784e-4 EJ/yr -->
+  <region name="Africa_Eastern">
+    <supplysector name="electricity">
+      <subsector name="hydro">
+        <technology name="hydro">
+          <period year="2025"><fixedOutput>0.000189</fixedOutput></period>
+          <period year="2030"><fixedOutput>0.000189</fixedOutput></period>
+          <period year="2035"><fixedOutput>0.000189</fixedOutput></period>
+          <period year="2040"><fixedOutput>0.000189</fixedOutput></period>
+          <period year="2045"><fixedOutput>0.000189</fixedOutput></period>
+          <period year="2050"><fixedOutput>0.000189</fixedOutput></period>
+        </technology>
+      </subsector>
+    </supplysector>
+  </region>
+
+  <!-- Asia: Hydro_AS — 0.150 GW at 38% CF = 1.797e-3 EJ/yr -->
+  <region name="South Asia">
+    <supplysector name="electricity">
+      <subsector name="hydro">
+        <technology name="hydro">
+          <period year="2025"><fixedOutput>0.001797</fixedOutput></period>
+          <period year="2030"><fixedOutput>0.001797</fixedOutput></period>
+          <period year="2035"><fixedOutput>0.001797</fixedOutput></period>
+          <period year="2040"><fixedOutput>0.001797</fixedOutput></period>
+          <period year="2045"><fixedOutput>0.001797</fixedOutput></period>
+          <period year="2050"><fixedOutput>0.001797</fixedOutput></period>
+        </technology>
+      </subsector>
+    </supplysector>
+  </region>
+
+  <!-- Europe: Hydro_EU — 0.002 GW at 35% CF = 2.207e-5 EJ/yr -->
+  <region name="EU-15">
+    <supplysector name="electricity">
+      <subsector name="hydro">
+        <technology name="hydro">
+          <period year="2025"><fixedOutput>0.000022</fixedOutput></period>
+          <period year="2030"><fixedOutput>0.000022</fixedOutput></period>
+          <period year="2035"><fixedOutput>0.000022</fixedOutput></period>
+          <period year="2040"><fixedOutput>0.000022</fixedOutput></period>
+          <period year="2045"><fixedOutput>0.000022</fixedOutput></period>
+          <period year="2050"><fixedOutput>0.000022</fixedOutput></period>
+        </technology>
+      </subsector>
+    </supplysector>
+  </region>
+
+  <!-- ── Rail electricity demand (Rail_EU_DEV, Europe, 9.90e-5 EJ/yr) ── -->
+  <!--
+    Add Rail_EU_DEV electricity consumption to Europe's passenger transport
+    final demand from 2025 onward.
+    5.5M pax × 5 kWh/pax × 3.6e-12 EJ/kWh = 9.90e-8 EJ/yr
+    Note: small relative to GCAM EJ resolution; included for completeness.
+  -->
+  <region name="EU-15">
+    <energybalance-final-demand name="trn_pass">
+      <!-- Rail_EU_DEV incremental electricity demand [EJ/yr] -->
+      <base-service year="2025">9.90e-8</base-service>
+    </energybalance-final-demand>
+  </region>
+
+</scenario>

@@ -1,0 +1,130 @@
+# ─── SSP3-7.0 — Regional Rivalry ─────────────────────────────────────────────
+# Narrative: fragmented world with low economic convergence, high population
+# growth in developing regions, and high barriers to trade and technology
+# transfer. Weak climate governance; fossil fuels dominate. ~3–4 °C trajectory.
+#
+# Project links:
+#   Africa Proj_002 (hospital) faces financing constraints — slow deployment.
+#   Hydro retrofits are delayed or partial. Rail_EU_DEV is an exception
+#   (Europe retains strong domestic institutions despite global fragmentation).
+#
+# Merges with base.yaml via Model.from_yaml("base.yaml", "ssp3.yaml").
+
+# ── Electricity demand [PJ/yr] — high growth, especially Global South ──────
+commodities:
+  - id: ELC
+    include_in_joint_renewable_target:
+      "*":
+        "*": true
+    demand_annual:
+      Africa:
+        "2020": 2500
+        "2025": 3200
+        "2030": 4150
+        "2035": 5350
+        "2040": 6850
+        "2045": 8650
+        "2050": 10900
+      Asia:
+        "2020": 10000
+        "2025": 12900
+        "2030": 16700
+        "2035": 21400
+        "2040": 27200
+        "2045": 34000
+        "2050": 42500
+      Europe:
+        "2020": 12000
+        "2025": 12800
+        "2030": 14000
+        "2035": 15600
+        "2040": 17300
+        "2045": 19200
+        "2050": 21500
+      LATAM:
+        "2020": 4500
+        "2025": 5450
+        "2030": 6700
+        "2035": 8200
+        "2040": 10000
+        "2045": 12100
+        "2050": 14700
+
+# ── CO2 limits — loose, consistent with ~7 W/m² forcing ──────────────────
+# High caps well above business-as-usual to avoid infeasibility while
+# reflecting the absence of meaningful international climate policy.
+impacts:
+  - id: CO2
+    penalty:
+      Africa: {"*": 5}
+      Asia:   {"*": 5}
+      Europe: {"*": 18}
+      LATAM:  {"*": 6}
+    constraint_annual:
+      Africa:
+        "2020": 2100
+        "2025": 2700
+        "2030": 3500
+        "2035": 4500
+        "2040": 5800
+        "2045": 7400
+        "2050": 9400
+      Asia:
+        "2020": 8500
+        "2025": 11300
+        "2030": 14700
+        "2035": 18900
+        "2040": 24100
+        "2045": 30500
+        "2050": 38500
+      Europe:
+        "2020": 4000
+        "2025": 4300
+        "2030": 4800
+        "2035": 5400
+        "2040": 6100
+        "2045": 7000
+        "2050": 8000
+      LATAM:
+        "2020": 1600
+        "2025": 2000
+        "2030": 2600
+        "2035": 3300
+        "2040": 4200
+        "2045": 5400
+        "2050": 6900
+
+# ── Minimum renewable share — low ambition, energy-security-driven ─────────
+renewable_production_target:
+  Africa:
+    "2020": 0.26
+    "2025": 0.26
+    "2030": 0.27
+    "2035": 0.28
+    "2040": 0.29
+    "2045": 0.30
+    "2050": 0.31
+  Asia:
+    "2020": 0.18
+    "2025": 0.19
+    "2030": 0.20
+    "2035": 0.21
+    "2040": 0.23
+    "2045": 0.25
+    "2050": 0.27
+  Europe:
+    "2020": 0.36
+    "2025": 0.38
+    "2030": 0.40
+    "2035": 0.42
+    "2040": 0.45
+    "2045": 0.47
+    "2050": 0.50
+  LATAM:
+    "2020": 0.42
+    "2025": 0.42
+    "2030": 0.43
+    "2035": 0.44
+    "2040": 0.45
+    "2045": 0.46
+    "2050": 0.47

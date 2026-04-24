@@ -1,0 +1,22 @@
+ecosystem_service,max_dependency_score,mean_dependency_score,n_material_projects,projects_affected
+water_supply,5,4.0,6,"['Proj_001', 'Proj_002', 'Proj_003', 'Hydro_AF', 'Hydro_AS', 'Hydro_EU']"
+climate_regulation,5,4.0,6,"['Proj_001', 'Proj_002', 'Proj_003', 'Hydro_AF', 'Hydro_AS', 'Hydro_EU']"
+freshwater_ecosystem_use,5,3.67,3,"['Hydro_AF', 'Hydro_AS', 'Hydro_EU']"
+water_flow_regulation,5,3.33,3,"['Hydro_AF', 'Hydro_AS', 'Hydro_EU']"
+air_quality_regulation,4,3.0,3,"['Proj_001', 'Proj_002', 'Proj_003']"
+erosion_control,4,3.0,6,"['Hydro_AF', 'Hydro_AS', 'Hydro_EU', 'Rail_EU_DEV', 'Rail_EU_OP1', 'Rail_EU_OP2']"
+genetic_materials,4,1.33,3,"['Proj_001', 'Proj_002', 'Proj_003']"
+flood_and_storm_protection,4,3.67,6,"['Hydro_AF', 'Hydro_AS', 'Hydro_EU', 'Rail_EU_DEV', 'Rail_EU_OP1', 'Rail_EU_OP2']"
+ground_water,3,2.67,0,[]
+pest_and_disease_control,3,2.33,0,[]
+terrestrial_ecosystem_use,3,2.67,6,"['Hydro_AF', 'Hydro_AS', 'Hydro_EU', 'Rail_EU_DEV', 'Rail_EU_OP1', 'Rail_EU_OP2']"
+soil_quality,3,2.33,0,[]
+marine_and_freshwater_goods,3,1.0,3,"['Hydro_AF', 'Hydro_AS', 'Hydro_EU']"
+noise_attenuation,2,1.33,3,"['Rail_EU_DEV', 'Rail_EU_OP1', 'Rail_EU_OP2']"
+animal_fibres_materials,2,0.67,0,[]
+plant_fibres_materials,2,0.67,0,[]
+marine_ecosystem_use,2,0.67,0,[]
+mediation_of_liquid_waste,0,0.0,3,"['Proj_001', 'Proj_002', 'Proj_003']"
+mediation_of_solid_waste,0,0.0,3,"['Proj_001', 'Proj_002', 'Proj_003']"
+mediation_of_gaseous_waste,0,0.0,0,[]
+pollination,0,0.0,0,[]

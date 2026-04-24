@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  elec_capacity.xml — GCAM query: installed electricity capacity by subsector
+  ===========================================================================
+  Queries total installed capacity by technology in the electricity sector.
+
+  Output unit: GW.
+
+  The iamc_bridge.py maps to IAMC:
+    subsector "coal"  → Capacity|Electricity|Coal
+    subsector "gas"   → Capacity|Electricity|Gas
+    subsector "hydro" → Capacity|Electricity|Hydro
+    subsector "solar" → Capacity|Electricity|Solar
+    subsector "wind"  → Capacity|Electricity|Wind
+-->
+<queries title="Electricity Installed Capacity">
+
+  <query title="elec capacity by subsector">
+    <axis1 name="subsector">../subsector[@name]</axis1>
+    <axis2 name="Year">../period[@year]</axis2>
+    <xPath buildList="true" dataName="capacity-GW" group="false" sumAll="false">
+      *[@type='sector' and @name='electricity']
+      /subsector
+      /technology
+      /period[@year]
+      /capacity/@value
+    </xPath>
+    <comments/>
+  </query>
+
+</queries>

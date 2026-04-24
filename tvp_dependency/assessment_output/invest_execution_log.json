@@ -1,0 +1,110 @@
+[
+  {
+    "model": "health_ndr",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Proj_001/ndr",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "health_urban_flood",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Proj_001/urban_flood",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "health_ndr",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Proj_002/ndr",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "health_urban_flood",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Proj_002/urban_flood",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "health_ndr",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Proj_003/ndr",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "health_urban_flood",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Proj_003/urban_flood",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "hydro_water_yield",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Hydro_AF/water_yield",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "hydro_sdr",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Hydro_AF/sdr",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "hydro_water_yield",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Hydro_AS/water_yield",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "hydro_sdr",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Hydro_AS/sdr",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "hydro_water_yield",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Hydro_EU/water_yield",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "hydro_sdr",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Hydro_EU/sdr",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "rail_habitat_quality",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Rail_EU_DEV/habitat_quality",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "rail_carbon",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Rail_EU_DEV/carbon",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "rail_habitat_quality",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Rail_EU_OP1/habitat_quality",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "rail_carbon",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Rail_EU_OP1/carbon",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "rail_habitat_quality",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Rail_EU_OP2/habitat_quality",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  },
+  {
+    "model": "rail_carbon",
+    "status": "dry_run",
+    "workspace": "assessment_output/invest_results/Rail_EU_OP2/carbon",
+    "message": "Set INVEST_DRY_RUN=0 and supply input rasters to execute."
+  }
+]

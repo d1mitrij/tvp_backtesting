@@ -1,0 +1,25 @@
+# MESSAGEix simulation dependencies
+#
+# GAMS (demo license):
+#   Download the GAMS installer from https://www.gams.com/download/
+#   A free demonstration license covers models up to 2 000 rows × 2 000 cols,
+#   sufficient for the MESSAGEix tutorial/snapshot-scale scenarios.
+#   Set environment variables:
+#     export GAMS_PATH=/path/to/gams    (directory containing the gams executable)
+#
+# Java Runtime Environment (JRE 11+):
+#   Required by ixmp's HSQLDB backend and the MESSAGEix reporting engine.
+#   sudo apt-get install openjdk-17-jdk   (Ubuntu/WSL2)
+#   Verify: java -version
+#
+# Zenodo snapshot (fetched automatically by mix-models):
+#   mix-models fetch snapshot-1
+#   Requires internet access on first run; cached locally thereafter.
+#
+message-ix[report,tutorial]>=3.6.0
+ixmp>=3.6.0
+ixmp4>=0.9.0          # SQLite-based backend (no Java required)
+message-ix-models>=2024.1   # provides mix-models CLI and snapshot fetch
+pyam-iamc>=2.0.0
+pandas>=2.0
+numpy>=1.24

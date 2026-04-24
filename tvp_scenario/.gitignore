@@ -1,0 +1,38 @@
+# Large reference PDFs and converted markdown dumps (>1 GB total)
+source/wg6/*.pdf
+source/wg6/*.md
+source/ipbes/*.pdf
+source/ipbes/*.md
+
+# Windows Zone.Identifier metadata files
+*:Zone.Identifier
+*.Zone.Identifier
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# GCAM / MESSAGEix solver artefacts
+*.log
+*.lp
+*.mps
+*.sol
+gcam/results/*.csv
+gcam/results/*.db
+
+# ixmp / MESSAGEix local database
+*.ixmp
+*.db
+
+# OS
+.DS_Store
+Thumbs.db

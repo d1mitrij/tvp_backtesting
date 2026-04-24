@@ -1,0 +1,15 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Hydro_AS/sdr",
+  "results_suffix": "Hydro_AS",
+  "dem_path": "modeled_input_data/invest_inputs/asia/digital_elevation_model.tif",
+  "erosivity_path": "modeled_input_data/invest_inputs/asia/rainfall_erosivity.tif",
+  "erodibility_path": "modeled_input_data/invest_inputs/asia/soil_erodibility.tif",
+  "lulc_path": "modeled_input_data/invest_inputs/asia/land_use_land_cover.tif",
+  "watersheds_path": "modeled_input_data/invest_inputs/asia/watersheds.shp",
+  "biophysical_table_path": "modeled_input_data/invest_inputs/asia/biophysical_table.csv",
+  "threshold_flow_accumulation": 1000,
+  "k_param": 2,
+  "ic_0_param": 0.5,
+  "sdr_max": 0.8,
+  "_model_name": "hydro_sdr"
+}

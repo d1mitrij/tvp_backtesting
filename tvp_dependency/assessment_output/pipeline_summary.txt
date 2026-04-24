@@ -1,0 +1,43 @@
+====================================================================
+  NATURE-RELATED DEPENDENCY & RISK ASSESSMENT – PORTFOLIO SUMMARY
+====================================================================
+  Assessment date       : 2026-04-09
+  Projects assessed     : 9
+  Total investment      : USD 2,530.2M
+  Projects at high risk : 5 / 9 (18% of investment)
+  Revenue at risk (RaR) : USD 145.2M
+  Portfolio ITR         : 3.11°C
+
+  TOP ECOSYSTEM DEPENDENCIES (portfolio-wide)
+  -------------------------------------------------------
+  water_supply                            max=5  n_material=6
+  climate_regulation                      max=5  n_material=6
+  freshwater_ecosystem_use                max=5  n_material=3
+  water_flow_regulation                   max=5  n_material=3
+  air_quality_regulation                  max=4  n_material=3
+  erosion_control                         max=4  n_material=6
+  genetic_materials                       max=4  n_material=3
+  flood_and_storm_protection              max=4  n_material=6
+
+  STRESS TEST TABLE (see portfolio_stress_test.csv for full detail)
+  -------------------------------------------------------
+  Proj_001           WRF=3.477 BRF=4.087  RaR=USD42.0M  *** HIGH RISK ***
+  Proj_002           WRF=3.513 BRF=3.598  RaR=USD3.6M  *** HIGH RISK ***
+  Proj_003           WRF=3.312 BRF=2.974  RaR=USD0.0M  
+  Hydro_AF           WRF=3.889 BRF=3.994  RaR=USD15.8M  *** HIGH RISK ***
+  Hydro_AS           WRF=4.266 BRF=4.259  RaR=USD83.0M  *** HIGH RISK ***
+  Hydro_EU           WRF=3.622 BRF=3.231  RaR=USD0.8M  *** HIGH RISK ***
+  Rail_EU_DEV        WRF=3.378 BRF=3.133  RaR=USD0.0M  
+  Rail_EU_OP1        WRF=3.378 BRF=3.133  RaR=USD0.0M  
+  Rail_EU_OP2        WRF=3.378 BRF=3.133  RaR=USD0.0M  
+
+  OUTPUT FILES
+  -------------------------------------------------------
+  /home/deuler/tvp_backtesting/tvp_dependency/assessment_output
+    encore_materiality_<project>.csv
+    wwf_risk_scores.csv
+    portfolio_stress_test.csv
+    dependency_heatmap.csv
+    invest_execution_log.json
+    invest_configs/<project>_<model>.json
+====================================================================

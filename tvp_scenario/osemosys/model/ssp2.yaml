@@ -1,0 +1,128 @@
+# ─── SSP2-4.5 — Middle of the Road ───────────────────────────────────────────
+# Narrative: current socioeconomic trends continue, uneven progress,
+# moderate population growth. CO2 limits tighten gradually; renewable
+# transition is market-led and policy-assisted. ~2 °C trajectory.
+#
+# Project links:
+#   All three project types are mid-cycle: hospitals expanding access
+#   (Africa Proj_002, LATAM Proj_001), rail modernising (Rail_EU_DEV),
+#   hydro retrofitting (all three projects deployed on schedule).
+#
+# Merges with base.yaml via Model.from_yaml("base.yaml", "ssp2.yaml").
+
+# ── Electricity demand [PJ/yr] ─────────────────────────────────────────────
+commodities:
+  - id: ELC
+    include_in_joint_renewable_target:
+      "*":
+        "*": true
+    demand_annual:
+      Africa:
+        "2020": 2500
+        "2025": 3100
+        "2030": 3850
+        "2035": 4700
+        "2040": 5700
+        "2045": 6850
+        "2050": 8100
+      Asia:
+        "2020": 10000
+        "2025": 12000
+        "2030": 14500
+        "2035": 17100
+        "2040": 19700
+        "2045": 22300
+        "2050": 25000
+      Europe:
+        "2020": 12000
+        "2025": 12500
+        "2030": 13100
+        "2035": 13700
+        "2040": 14300
+        "2045": 14900
+        "2050": 15400
+      LATAM:
+        "2020": 4500
+        "2025": 5250
+        "2030": 6100
+        "2035": 7100
+        "2040": 8200
+        "2045": 9400
+        "2050": 10700
+
+# ── CO2 emission limits [Mt CO2/yr] — AR6 intermediate (2 °C) ────────────
+impacts:
+  - id: CO2
+    penalty:
+      Africa: {"*": 35}
+      Asia:   {"*": 30}
+      Europe: {"*": 75}
+      LATAM:  {"*": 40}
+    constraint_annual:
+      Africa:
+        "2020": 1000
+        "2025": 950
+        "2030": 880
+        "2035": 790
+        "2040": 670
+        "2045": 540
+        "2050": 410
+      Asia:
+        "2020": 4200
+        "2025": 4250
+        "2030": 4050
+        "2035": 3650
+        "2040": 3100
+        "2045": 2500
+        "2050": 1900
+      Europe:
+        "2020": 1950
+        "2025": 1600
+        "2030": 1260
+        "2035": 950
+        "2040": 680
+        "2045": 430
+        "2050": 210
+      LATAM:
+        "2020": 680
+        "2025": 660
+        "2030": 630
+        "2035": 580
+        "2040": 510
+        "2045": 430
+        "2050": 340
+
+# ── Minimum renewable electricity share ────────────────────────────────────
+renewable_production_target:
+  Africa:
+    "2020": 0.30
+    "2025": 0.36
+    "2030": 0.43
+    "2035": 0.51
+    "2040": 0.59
+    "2045": 0.67
+    "2050": 0.75
+  Asia:
+    "2020": 0.22
+    "2025": 0.28
+    "2030": 0.37
+    "2035": 0.45
+    "2040": 0.54
+    "2045": 0.63
+    "2050": 0.72
+  Europe:
+    "2020": 0.40
+    "2025": 0.48
+    "2030": 0.57
+    "2035": 0.65
+    "2040": 0.73
+    "2045": 0.82
+    "2050": 0.89
+  LATAM:
+    "2020": 0.47
+    "2025": 0.52
+    "2030": 0.58
+    "2035": 0.64
+    "2040": 0.70
+    "2045": 0.76
+    "2050": 0.83

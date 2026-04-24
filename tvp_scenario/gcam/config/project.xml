@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  project.xml — pygcam project definition for S4 REMIND-MAgPIE scenarios
+  =========================================================================
+  Usage (from the gcam/ directory, with GCAM_HOME set):
+    gt run -p config/project.xml -g SSPs -s Reference
+    gt run -p config/project.xml -g SSPs -s ssp1
+    gt run -p config/project.xml -g SSPs             (all scenarios)
+    gt query -p config/project.xml -g SSPs -s ssp2 -q elec_gen,co2,capacity
+
+  Environment variables required:
+    GCAM_HOME   Path to the GCAM release directory (contains the gcam binary)
+    GCAM_EXE    (optional) Path to gcam executable if not $GCAM_HOME/exe/gcam
+    GCAM_XML    Path to GCAM XML input data ($GCAM_HOME/input/gcamdata/xml)
+
+  Region aggregation used in queries (→ Africa, Asia, Europe, LATAM):
+    Africa : Africa_Eastern, Africa_Northern, Africa_Southern, Africa_Western
+    Asia   : China, India, South Korea, Japan, Southeast Asia, South Asia
+    Europe : EU-15, EU-12, Europe Eastern, Europe Non-EU, Russia, Ukraine
+    LATAM  : Mexico, Central America and Caribbean, Brazil,
+             South America (Northern Latitude), South America (Southern Latitude)
+-->
+<projects>
+  <project name="s4-scenarios"
+           gcamVersion="7.0"
+           sandboxDir="{GCAM_HOME}/sandbox/{scenarioName}"
+           gcamExe="{GCAM_HOME}/exe/gcam"
+           xmlSrcDir="{GCAM_HOME}/input/gcamdata/xml">
+
+    <!-- ── Scenario group: all five SSPs ─────────────────────────────────── -->
+    <scenarioGroup name="SSPs" useGroupDir="true">
+      <scenario name="Reference" baseline="1" active="1"
+                description="GCAM 7.0 reference scenario (no additional climate policy)"/>
+      <scenario name="ssp1"     baseline="0" active="1"
+                description="SSP1-1.9  Sustainability — 1.5 °C pathway"/>
+      <scenario name="ssp2"     baseline="0" active="1"
+                description="SSP2-4.5  Middle of the Road — ~2 °C pathway"/>
+      <scenario name="ssp3"     baseline="0" active="1"
+                description="SSP3-7.0  Regional Rivalry — 3–4 °C pathway"/>
+      <scenario name="ssp4"     baseline="0" active="1"
+                description="SSP4-6.0  Inequality — polarised 3 °C pathway"/>
+      <scenario name="ssp5"     baseline="0" active="1"
+                description="SSP5-8.5  Fossil-Fueled Development — 4–5 °C pathway"/>
+    </scenarioGroup>
+
+    <!-- ── Workflow steps ────────────────────────────────────────────────── -->
+    <!--
+      setup : copies GCAM XML inputs into sandbox, applies XML modifications
+      gcam  : runs the GCAM binary
+      query : runs GCAM queries against the output database (BaseX)
+    -->
+    <steps>
+      <step name="setup" seq="1" runFor="all"/>
+      <step name="gcam"  seq="2" runFor="all"/>
+      <step name="query" seq="3" runFor="all"/>
+    </steps>
+
+    <!-- ── Output queries ────────────────────────────────────────────────── -->
+    <queries varName="gcamQueries">
+      <query name="elec_gen"  >config/queries/electricity_output.xml</query>
+      <query name="co2"       >config/queries/co2_emissions.xml</query>
+      <query name="capacity"  >config/queries/elec_capacity.xml</query>
+      <query name="investment">config/queries/elec_investment.xml</query>
+    </queries>
+
+    <!-- ── Scenario XML modifications ────────────────────────────────────── -->
+    <!--
+      project_params.xml   : applied to ALL policy scenarios; injects
+                             project-calibrated parameters (coal efficiency,
+                             hydro retrofit capacity, rail electricity demand)
+                             derived from the three finance CSVs via
+                             derive_parameters.py.
+      ssp{N}_policy.xml    : SSP-specific carbon prices and renewable standards.
+    -->
+
+    <scenario name="Reference">
+      <!-- GCAM 7.0 reference — no modifications needed -->
+    </scenario>
+
+    <scenario name="ssp1">
+      <xmlEdit file="xml/project_params.xml"/>
+      <xmlEdit file="xml/ssp1_policy.xml"/>
+    </scenario>
+
+    <scenario name="ssp2">
+      <xmlEdit file="xml/project_params.xml"/>
+      <xmlEdit file="xml/ssp2_policy.xml"/>
+    </scenario>
+
+    <scenario name="ssp3">
+      <xmlEdit file="xml/project_params.xml"/>
+      <xmlEdit file="xml/ssp3_policy.xml"/>
+    </scenario>
+
+    <scenario name="ssp4">
+      <xmlEdit file="xml/project_params.xml"/>
+      <xmlEdit file="xml/ssp4_policy.xml"/>
+    </scenario>
+
+    <scenario name="ssp5">
+      <xmlEdit file="xml/project_params.xml"/>
+      <xmlEdit file="xml/ssp5_policy.xml"/>
+    </scenario>
+
+  </project>
+</projects>

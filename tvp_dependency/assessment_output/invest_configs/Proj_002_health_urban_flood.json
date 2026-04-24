@@ -1,0 +1,11 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Proj_002/urban_flood",
+  "results_suffix": "Proj_002",
+  "aoi_watersheds_path": "modeled_input_data/invest_inputs/africa/hospital_catchment.shp",
+  "rainfall_depth": 50,
+  "lulc_path": "modeled_input_data/invest_inputs/africa/land_use_land_cover.tif",
+  "soils_hydrological_group_path": "modeled_input_data/invest_inputs/africa/soil_hydrological_group.tif",
+  "curve_number_table_path": "modeled_input_data/invest_inputs/africa/cn_lookup.csv",
+  "infrastructure_file_path": "modeled_input_data/invest_inputs/africa/hospital_footprint.shp",
+  "_model_name": "health_urban_flood"
+}

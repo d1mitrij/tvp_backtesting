@@ -1,0 +1,15 @@
+# GCAM / pygcam simulation dependencies
+#
+# GCAM binary:
+#   Download the GCAM release package from:
+#     https://github.com/JGCRI/gcam-core/releases
+#   Set environment variables:
+#     GCAM_HOME=/path/to/gcam-core      (directory containing the gcam binary)
+#     GCAM_XML=$GCAM_HOME/input/gcamdata/xml
+#
+# Python packages:
+pygcam>=1.11.0       # workflow manager: gt run / gt query (latest: 1.11.1)
+gcam-reader>=1.1.0   # reads GCAM query CSV outputs into pandas
+pandas>=2.0
+numpy>=1.24
+lxml>=4.9            # XML generation and XPath in iamc_bridge

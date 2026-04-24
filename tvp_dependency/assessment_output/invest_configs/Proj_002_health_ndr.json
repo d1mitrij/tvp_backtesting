@@ -1,0 +1,16 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Proj_002/ndr",
+  "results_suffix": "Proj_002",
+  "dem_path": "modeled_input_data/invest_inputs/africa/digital_elevation_model.tif",
+  "lulc_path": "modeled_input_data/invest_inputs/africa/land_use_land_cover.tif",
+  "runoff_proxy_path": "modeled_input_data/invest_inputs/africa/annual_precipitation.tif",
+  "watersheds_path": "modeled_input_data/invest_inputs/africa/watersheds.shp",
+  "biophysical_table_path": "modeled_input_data/invest_inputs/africa/biophysical_table_ndr.csv",
+  "calc_p": true,
+  "calc_n": true,
+  "threshold_flow_accumulation": 1000,
+  "k_param": 2,
+  "subsurface_critical_length_n": 150,
+  "subsurface_eff_n": 0.8,
+  "_model_name": "health_ndr"
+}

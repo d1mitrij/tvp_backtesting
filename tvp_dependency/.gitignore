@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+*.dylib
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# InVEST model outputs (large rasters — supply inputs separately)
+assessment_output/invest_results/
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Credentials / secrets
+.env
+*.pem
+*.key
+secrets.json

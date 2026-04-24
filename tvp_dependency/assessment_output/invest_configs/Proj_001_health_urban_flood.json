@@ -1,0 +1,11 @@
+{
+  "workspace_dir": "assessment_output/invest_results/Proj_001/urban_flood",
+  "results_suffix": "Proj_001",
+  "aoi_watersheds_path": "modeled_input_data/invest_inputs/latam/hospital_catchment.shp",
+  "rainfall_depth": 50,
+  "lulc_path": "modeled_input_data/invest_inputs/latam/land_use_land_cover.tif",
+  "soils_hydrological_group_path": "modeled_input_data/invest_inputs/latam/soil_hydrological_group.tif",
+  "curve_number_table_path": "modeled_input_data/invest_inputs/latam/cn_lookup.csv",
+  "infrastructure_file_path": "modeled_input_data/invest_inputs/latam/hospital_footprint.shp",
+  "_model_name": "health_urban_flood"
+}

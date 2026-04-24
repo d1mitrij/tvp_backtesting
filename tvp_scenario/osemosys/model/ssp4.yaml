@@ -1,0 +1,145 @@
+# ─── SSP4-6.0 — Inequality ────────────────────────────────────────────────────
+# Narrative: stark inequality between and within countries. High-tech,
+# capital-intensive energy systems in wealthy regions (Europe, urban Asia);
+# labour-intensive, fossil-dependent systems in low-income regions (Africa,
+# rural Asia, parts of LATAM). ~3 °C trajectory.
+#
+# Project links:
+#   Africa Proj_002 ($25M, 3 000 specialised patients) reflects limited
+#   capital access — hospital serves a tiny elite; most of the population
+#   lacks reliable electricity. Hydro_AF retrofit is a rare capital inflow.
+#   LATAM Proj_001 ($250M, 5 M primary patients) reflects more equitable
+#   access within LATAM (urban/rural split but better than Africa).
+#   Europe and wealthy Asia converge rapidly; Africa diverges.
+#
+# Key SSP4 distinction from SSP3:
+#   SSP3 = global fragmentation (all regions suffer)
+#   SSP4 = polarised (wealthy regions decarbonise, poor ones lag)
+#
+# Merges with base.yaml via Model.from_yaml("base.yaml", "ssp4.yaml").
+
+# ── Electricity demand [PJ/yr] ─────────────────────────────────────────────
+# Africa: slow growth constrained by poverty, limited grid access
+# Asia: polarised — urban high-income growth, rural stagnation; net moderate
+# Europe: efficiency-driven stabilisation (wealthy, strong institutions)
+# LATAM: bifurcated; urban Brazil/Mexico grow, rural areas stagnate
+commodities:
+  - id: ELC
+    include_in_joint_renewable_target:
+      "*":
+        "*": true
+    demand_annual:
+      Africa:
+        "2020": 2500
+        "2025": 2720
+        "2030": 2950
+        "2035": 3200
+        "2040": 3470
+        "2045": 3760
+        "2050": 4070
+      Asia:
+        "2020": 10000
+        "2025": 12600
+        "2030": 15700
+        "2035": 18900
+        "2040": 22100
+        "2045": 25200
+        "2050": 28000
+      Europe:
+        "2020": 12000
+        "2025": 12050
+        "2030": 11900
+        "2035": 11650
+        "2040": 11350
+        "2045": 11050
+        "2050": 10800
+      LATAM:
+        "2020": 4500
+        "2025": 5060
+        "2030": 5700
+        "2035": 6400
+        "2040": 7200
+        "2045": 8100
+        "2050": 9100
+
+# ── CO2 limits — divergent by development level ────────────────────────────
+# Europe: strict (consistent with wealthy, high-institution trajectory;
+#   Rail_EU_DEV signals strong policy capacity)
+# Asia: intermediate (urban areas strict, rural areas effectively unconstrained)
+# Africa: very loose (no capital for transition; limited enforcement capacity)
+# LATAM: intermediate-loose (bifurcated economy)
+impacts:
+  - id: CO2
+    penalty:
+      Africa: {"*": 8}
+      Asia:   {"*": 28}
+      Europe: {"*": 100}
+      LATAM:  {"*": 20}
+    constraint_annual:
+      Africa:
+        "2020": 1600
+        "2025": 1800
+        "2030": 2100
+        "2035": 2500
+        "2040": 3000
+        "2045": 3700
+        "2050": 4600
+      Asia:
+        "2020": 5200
+        "2025": 5700
+        "2030": 6100
+        "2035": 6500
+        "2040": 7000
+        "2045": 7500
+        "2050": 8100
+      Europe:
+        "2020": 1950
+        "2025": 1500
+        "2030": 1100
+        "2035": 760
+        "2040": 490
+        "2045": 260
+        "2050": 105
+      LATAM:
+        "2020": 900
+        "2025": 950
+        "2030": 1020
+        "2035": 1100
+        "2040": 1200
+        "2045": 1340
+        "2050": 1500
+
+# ── Renewable targets — polarised by institutional capacity ────────────────
+renewable_production_target:
+  Africa:
+    "2020": 0.26
+    "2025": 0.26
+    "2030": 0.27
+    "2035": 0.27
+    "2040": 0.28
+    "2045": 0.29
+    "2050": 0.30
+  Asia:
+    "2020": 0.26
+    "2025": 0.33
+    "2030": 0.42
+    "2035": 0.51
+    "2040": 0.60
+    "2045": 0.68
+    "2050": 0.75
+  Europe:
+    "2020": 0.44
+    "2025": 0.58
+    "2030": 0.72
+    "2035": 0.83
+    "2040": 0.91
+    "2045": 0.96
+    "2050": 0.98
+  LATAM:
+    "2020": 0.50
+    "2025": 0.53
+    "2030": 0.57
+    "2035": 0.61
+    "2040": 0.66
+    "2045": 0.71
+    "2050": 0.76
