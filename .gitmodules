@@ -1,0 +1,3 @@
+[submodule "transitionvaluation"]
+	path = transitionvaluation
+	url = https://github.com/Greenings/transitionvaluation
