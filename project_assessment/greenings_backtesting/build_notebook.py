@@ -95,7 +95,7 @@ plt.rcParams.update({"figure.dpi": 110, "figure.figsize": (13, 5),
 ROOT   = Path("../../..").resolve()   # /home/deuler
 TVP4   = ROOT / "tvp4"
 TVP5   = ROOT / "tvp5"
-S4BT   = ROOT / "s4_backtesting"
+S4BT   = Path(__file__).parent.parent.parent / "data" / "s4_backtesting"
 S4DEP  = ROOT / "s4_dependency"
 S4SCE  = ROOT / "s4_scenarios"
 PA_DIR = Path(".").resolve()

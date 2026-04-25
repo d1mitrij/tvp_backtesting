@@ -17,7 +17,7 @@ from pathlib import Path
 
 import pandas as pd
 
-DATA_DIR = Path(__file__).parent.parent / "modeled_input_data"
+DATA_DIR = Path(__file__).parent.parent.parent / "data" / "modeled_input"
 
 # ── Physical constants ────────────────────────────────────────────────────────
 CAPEX_PER_KW_USD  = 1_000        # $/kW — hydro retrofit benchmark (assumptions.txt)

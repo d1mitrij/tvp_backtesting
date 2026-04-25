@@ -13,7 +13,7 @@ import numpy as np
 from pathlib import Path
 
 HERE = Path(__file__).parent
-S4 = Path(__file__).parent.parent.parent / "s4_backtesting"
+S4 = Path(__file__).parent.parent.parent / "data" / "s4_backtesting"
 
 # ── 1. PROJECT MASTER ─────────────────────────────────────────────────────────
 

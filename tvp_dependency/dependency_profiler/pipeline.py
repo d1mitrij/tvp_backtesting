@@ -42,7 +42,7 @@ import pandas as pd
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-DATA_DIR   = Path(__file__).parent.parent / "modeled_input_data"
+DATA_DIR   = Path(__file__).parent.parent.parent / "data" / "modeled_input"
 OUTPUT_DIR = Path(__file__).parent.parent / "assessment_output"
 INVEST_CFG = OUTPUT_DIR / "invest_configs"
 

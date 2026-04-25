@@ -38,7 +38,7 @@ warnings.filterwarnings("ignore")
 # PATHS
 # ══════════════════════════════════════════════════════════════════════════════
 DATA_DIR  = Path("data")
-INPUT_DIR = Path("modeled_input_data")
+INPUT_DIR = Path(__file__).parent.parent.parent.parent / "data" / "modeled_input"
 
 # Local paths to database files — set these once you have downloaded the DBs:
 #   EXIOBASE  : pymrio.download_exiobase3(storage_folder="./mrio_data/exiobase/")

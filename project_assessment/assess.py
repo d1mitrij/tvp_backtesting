@@ -49,7 +49,7 @@ ROOT            = Path(__file__).parent.parent   # repo root (one level up from 
 DBIO_DIR        = ROOT / "tvp_dbio"
 SCENARIO_DIR    = ROOT / "tvp_scenario"
 DEPENDENCY_DIR  = ROOT / "tvp_dependency"
-INPUT_DIR       = Path(__file__).parent / "modeled_input_data"
+INPUT_DIR       = ROOT / "data" / "modeled_input"
 RESULTS_DIR     = Path(__file__).parent / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
 
@@ -993,8 +993,8 @@ def _resolve_wifor_dir() -> Path | None:
     """
     _here = Path(__file__).parent          # project_assessment/
     candidates = [
-        _here / "wifor_vf",                # symlink: project_assessment/wifor_vf
-        _here / ".." / "value-factors",    # submodule (if data generated locally)
+        _here / ".." / "data" / "value_factors",   # canonical: data/ (gitignored)
+        _here / "wifor_vf",                         # legacy symlink fallback
     ]
     for p in candidates:
         if p.is_dir() and any(p.glob("*_formatted_Mon*_my.h5")):

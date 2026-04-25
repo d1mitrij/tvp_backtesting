@@ -38,7 +38,7 @@ MAX_TIERS  = 8
 EUR_TO_USD = 1.09         # EUR → USD conversion
 
 DATA_DIR   = Path("data")
-INPUT_DIR  = Path("modeled_input_data")
+INPUT_DIR  = Path(__file__).parent.parent.parent.parent / "data" / "modeled_input"
 OUT_BENCH  = DATA_DIR / "fastinfra_benchmark_enhanced.csv"
 OUT_TIERS  = DATA_DIR / "supply_chain_tiers.csv"
 
