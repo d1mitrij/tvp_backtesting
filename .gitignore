@@ -14,6 +14,9 @@ build/
 *.h5
 *.hdf5
 
+# Generated figure outputs — reproducible by running notebooks
+project_assessment/greenings_backtesting/*.png
+
 # ── OS / editor ──────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
