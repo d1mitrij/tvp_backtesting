@@ -7,7 +7,7 @@ projects (Health, Energy, Transport) across Africa, Asia, Europe, and LATAM.
 
 ## What the assessment does
 
-Three independent analytical passes over the same project inputs
+Four independent analytical passes over the same project inputs
 (`project_assessment/modeled_input_data/`):
 
 | Pass | Tool | What it measures |
@@ -15,6 +15,7 @@ Three independent analytical passes over the same project inputs
 | 1 | **tvp_dbio** | Supply-chain GHG, employment, water use, and value added (tiers 0–5) |
 | 2 | **tvp_scenario** | SSP1–5 scenario GHG adjustment factors for 2025 / 2030 / 2040 |
 | 3 | **tvp_dependency** | Nature-related dependency risk (ENCORE, WWF, InVEST, TNFD LEAP) |
+| 4 | **GHG transition-risk** | Avoided vs supply-chain GHG monetised under UBA and REMIND-MAgPIE |
 
 ---
 
@@ -168,6 +169,59 @@ pipeline both read them at runtime.
 
 ---
 
+---
+
+## GHG transition-risk analysis (Pass 4)
+
+### Notebooks and scripts
+
+| File | Purpose |
+|------|---------|
+| `ghg_avoided_vs_supply_chain.ipynb` | Core GHG backtesting — avoided vs supply-chain, UBA and REMIND-MAgPIE valuation across all 6 IPCC AR6 scenarios |
+| `ghg_communication_figures.ipynb` | Investor-facing communication figures (worst/best per project, sector, country) |
+| `ghg_communication_figures.py` | Standalone script version of the communication figures |
+
+### Methodology
+
+1. **Avoided GHG** — self-reported annual avoided emissions (tCO₂e/yr) from
+   `greenings_backtesting/03_monetisation_inputs.csv`.
+
+2. **Supply-chain GHG** — Tier-0 + Tier-1 footprint per project from
+   Exiobase 3.8.1 via `tvp_io_lib.tier0_impact` / `tier1_impact`.
+
+3. **UBA Central baseline** — monetised at 412.50 USD/tCO₂e (UBA
+   Methodological Convention 4.0, 2030, CO₂_CO₂eq, PRTP 1 %, EUR × 1.10).
+
+4. **REMIND-MAgPIE country weighting** — R5 regional multipliers from IPCC
+   AR6 WG3 Ch. 3 / Annex III applied to WifOR global 2030 coefficients and
+   to the UBA Central price to produce country-specific forward-looking
+   values for six IPCC scenarios (C1/SSP1-1.9 through C8/SSP5-8.5).
+
+### Running the GHG analysis
+
+```bash
+# Full notebook (core analysis + all figures)
+jupyter notebook project_assessment/ghg_avoided_vs_supply_chain.ipynb
+
+# Communication figures notebook
+jupyter notebook project_assessment/ghg_communication_figures.ipynb
+
+# Communication figures as a script
+python project_assessment/ghg_communication_figures.py
+```
+
+### Communication figure outputs
+
+All saved to `greenings_backtesting/`:
+
+| File | Description |
+|------|-------------|
+| `comm_fig1_per_project.png` | Dot-range chart — worst/UBA/best per project |
+| `comm_fig2_sector.png` | Grouped bars — worst/UBA/best per sector |
+| `comm_fig3_geography.png` | Range bands — worst-to-best per country |
+
+---
+
 ## Submodule reference
 
 | Submodule | Path | Purpose |
@@ -175,3 +229,4 @@ pipeline both read them at runtime.
 | tvp_dbio | `tvp_dbio/` | MRIO supply-chain library (`tvp_io_lib.py`) |
 | tvp_scenario | `tvp_scenario/` | OSeMOSYS / GCAM / MESSAGEix SSP simulations |
 | tvp_dependency | `tvp_dependency/` | ENCORE / WWF / InVEST / TNFD pipeline |
+| transitionvaluation | `transitionvaluation/` | UBA value-factor tables (submodule) |
