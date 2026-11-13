@@ -2403,7 +2403,8 @@ REFERENCES_MD = """
 | **Nordhaus (2017) DICE** | GHG social cost (BASE): embedded in WifOR H5 `MonGHG_my.h5` | https://doi.org/10.1257/aer.20150649 |
 | **Wetzer et al. (2024)** *Science* 383:152 | Three-channel ONPV risk model (physical, transition, legal) | https://doi.org/10.1126/science.adj6654 |
 | **CBI Green Bond Principles (2023)** | SLB greenium 0–10 bp benchmark (δ_max = 0.001) | https://www.climatebonds.net/standard/sustainability-linked |
-| **Shishlov et al. (2016)** | Green bond yield-spread empirical evidence | https://doi.org/10.3390/jrfm9040016 |
+| **Shishlov, Morel & Cochran (2016)** I4CE, *Beyond Transparency* | No clear evidence that green bonds reduce the cost of capital | https://www.i4ce.org |
+| **Löffler, Petreski & Stephan (2021)** | Average green-bond yield discount of 15–20 bps (global sample) | https://doi.org/10.1007/s40822-020-00165-y |
 | **SFDR Annex I (2022)** | PAI mandatory indicator definitions (#1 GHG, #6 water, #7 biodiversity) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1288 |
 | **TCFD Final Report (2017)** | Scenario analysis disclosure framework | https://assets.fsb.org/2017-06-29_tcfd_report.pdf |
 | **TNFD v1.0 (2023)** | Nature-related financial disclosure; OCI > 0.1% flag | https://tnfd.global/publication/nature-related-risks-and-opportunities/ |
