@@ -118,7 +118,7 @@ $$WACC_{adj} = WACC_{base} - \Delta_{ESG}$$
 
 $$\Delta_{ESG} = \min\left(\delta_{max},\ \frac{1 - \overline{wrf}_{norm}}{2} \times \delta_{max} + \frac{1 - \overline{dep}_{norm}}{2} \times \delta_{max}\right)$$
 
-where $\overline{wrf}_{norm}$ is the WWF WRF physical score normalised to [0,1] and $\overline{dep}_{norm}$ is the mean ENCORE dep_factor normalised. The maximum SLB greenium is set at **10 basis points** (δ_max = 0.0010), consistent with the green-bond literature (CBI 2023; Shishlov et al. 2016) showing a 15–20 bps spread below conventional debt for best-in-class issuers.
+where $\overline{wrf}_{norm}$ is the WWF WRF physical score normalised to [0,1] and $\overline{dep}_{norm}$ is the mean ENCORE dep_factor normalised. The maximum SLB greenium is set at **10 basis points** (δ_max = 0.0010), which should be read as an upper bound rather than an expected value. Peer-reviewed estimates of the average greenium are generally 1–9 bps; the higher figure of 15–20 bps is the average yield discount Löffler, Petreski and Stephan (2021) report across global green bonds, not an infrastructure-debt benchmark. Shishlov, Morel and Cochran (2016, I4CE, *Beyond Transparency*) find that "in terms of financial conditions for issuers it appears that green bonds are identical to traditional bonds" and that there is "no clear evidence that green bonds reduce the cost of capital".
 
 ### 2.4 SSP Transmission Channels
 
@@ -695,7 +695,7 @@ For **Hydro_AS** the ordering inverts because water is the dominant channel: SSP
 
 ### 9.2 WACC Adjustment and SLB Pricing
 
-Under the current model, the ESG discount is at most 1 bp. The literature supports up to 15–20 bps for best-in-class SLBs. Projects with low WRF physical scores and positive iNPV across all SSPs (Rail_EU_DEV, Proj_003) are the strongest candidates for SLB structuring:
+Under the current model, the ESG discount is at most 1 bp. Average greenium estimates in the peer-reviewed literature are 1–9 bps, with up to 15–20 bps in global green-bond samples (Löffler et al. 2021). Projects with low WRF physical scores and positive iNPV across all SSPs (Rail_EU_DEV, Proj_003) are the strongest candidates for SLB structuring:
 
 - **Rail_EU_DEV**: WRF_physical = 2.906; iNPV positive all SSPs; 10 bps discount → saves ~$2M over bond lifetime
 - **Proj_001**: WRF_physical = 3.788 (high-risk flag); SLB harder to structure without nature-risk mitigation covenants
@@ -755,7 +755,8 @@ Each project maps to one ISO3 country (DEU, BRA, NGA, IND). Multi-country supply
 | **Wetzer et al. (2024)** *Science* 383:152 | Three-channel ONPV risk model (physical, transition, legal) |
 | **Nordhaus (2017)** DICE model | GHG_BASE SCC derivation (embedded in WifOR H5) |
 | **CBI Green Bond Principles (2023)** | SLB greenium 15–20 bps benchmarks |
-| **Shishlov et al. (2016)** | Green bond yield-spread evidence |
+| **Shishlov, Morel & Cochran (2016)** I4CE, *Beyond Transparency: Unlocking the Full Potential of Green Bonds* | No clear evidence that green bonds lower issuers' cost of capital (financial conditions identical to conventional bonds) |
+| **Löffler, Petreski & Stephan (2021)** *Eurasian Economic Review* 11:1–24 | Average green-bond yield discount of 15–20 bps (global sample) |
 
 ### Data Sources
 
